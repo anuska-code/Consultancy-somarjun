@@ -1,0 +1,216 @@
+.homepageWrapper {
+  width: 100%;
+  background-color: #e6eff7;
+  font-family: sans-serif;
+  color: #333;
+
+  /* min-height: 100vh; */
+}
+
+/* Hero Section */
+.heroSection {
+      height: 90vh;
+    width:80%;
+    margin:auto;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  padding: 2rem 0rem 3rem 2rem;
+  gap: 5rem;
+  
+}
+
+.heroText {
+  flex: 1;
+}
+
+.heroText h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.heroText p {
+    text-align: justify;
+  margin-top: 20px;
+  font-size: 2.4rem;
+  color: #555;
+}
+
+
+.centeredHeroText{
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: auto;
+}
+.heroButtons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contactBtn {
+  background-color: #d62828;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.applyBtn {
+  background: none;
+  border: 1px solid #d62828;
+  color: #d62828;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.heroImage {
+  flex: 1;
+  margin:auto;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+}
+
+.supporttext {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 50px;
+  position: relative;
+  margin: auto;
+}
+
+.supporttext::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1e4f91;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Test Logos */
+.testLogos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 40px 0;
+}
+
+/* Chat Widget */
+.chatWidget {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 999;
+}
+
+.chatMessage {
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chatButton {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chatIconWrapper {
+  position: relative;
+}
+
+.chatIcon {
+  background-color: #007bff;
+  color: white;
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatNotification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 9999px;
+}
+
+/* === MEDIA QUERIES === */
+ 
+/* Tablet and up (medium screens) */
+
+
+/* Large screens (desktop and wider) */
+@media (max-width: 1080px) {
+  .homepageWrapper {
+    width: 100%;
+    margin: auto;
+  }
+  .heroSection{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+/* Mobile styles (small screens) */
+@media (max-width: 768px) {
+  .homepageWrapper {
+    margin: 0 auto;
+  }
+
+  .heroSection {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .testLogos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .chatWidget {
+    bottom: 10px;
+    right: 10px;
+  }
+}
