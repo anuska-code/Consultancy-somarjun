@@ -2,6 +2,8 @@ import React from 'react';
 import { HiOutlineHand } from 'react-icons/hi';
 import { FaRegComments } from 'react-icons/fa';
 import styles from './Hero.module.css';
+import CardList from '../Cards/CardList';
+
 
 const Hero = () => {
   return (
@@ -37,11 +39,11 @@ const Hero = () => {
 
      
      
-<div className={styles.supporttext}>
+{/* <div className={styles.supporttext}>
   We are here to help you out at the best
-</div>
+</div> */}
 
-
+      
       {/* Footer Help Chat */}
       <div className={styles.chatWidget}>
         <div className={styles.chatMessage}>
@@ -54,6 +56,7 @@ const Hero = () => {
           <div className={styles.chatNotification}>1</div>
         </div>
       </div>
+      <CardList/>
     </div>
   );
 };

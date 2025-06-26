@@ -9,7 +9,7 @@
 
 /* Hero Section */
 .heroSection {
-      height: 90vh;
+      /* height: 90vh; */
     width:80%;
     margin:auto;
   display: flex;
@@ -77,11 +77,12 @@
 }
 
 .heroImage img {
+  padding: 1 rem;
   width: 100%;
   height: auto;
 }
 
-.supporttext {
+/* .supporttext {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   font-size: 18px;
@@ -99,7 +100,7 @@
   background-color: #1e4f91;
   margin: 8px auto 0;
   border-radius: 2px;
-}
+} */
 
 /* Test Logos */
 .testLogos {
@@ -166,6 +167,7 @@
   border-radius: 9999px;
 }
 
+
 /* === MEDIA QUERIES === */
  
 /* Tablet and up (medium screens) */
@@ -189,8 +191,9 @@
   }
 
   .heroSection {
+    flex-wrap: wrap;
     padding: 1rem;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .heroText h1 {
@@ -212,5 +215,17 @@
   .chatWidget {
     bottom: 10px;
     right: 10px;
+  }
+}
+
+@media (max-width: 485px) {
+  .homepageWrapper {
+    margin: 0 auto;
+  }
+
+  .heroSection {
+    flex-wrap: wrap;
+    padding: 1rem;
+    flex-direction: column-reverse;
   }
 }

@@ -1,0 +1,182 @@
+/* components/Cards/Card.module.css */
+.container {
+width:80%;
+margin: auto;
+/* padding: 2rem; */
+text-align: center;
+min-height: 90vh;
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #4b1e9e;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+}
+
+.header p {
+  font-size: 2rem;
+  color: #4b1e9e;
+  margin: 0;
+  line-height: 1.5;
+  font-family: Poppins, sans-serif;
+}
+
+.cardListWrapper {
+  width:80%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0;
+  margin: auto;
+}
+
+.cardWrapper {
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-5px);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+  text-align: left;
+}
+
+.content {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e4f91;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.learnMore {
+  font-size: 1.8rem;
+  color: #6b21a8;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.learnMore:hover {
+  color: #a333c8;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    width:80%;
+    height: auto; /* Allow height to adjust on smaller screens */
+    padding: 1.5rem;
+  }
+
+  .header {
+  margin-bottom: 2rem;
+}
+  
+
+  
+
+  .cardListWrapper {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    gap: 1.5rem;
+    max-width: 900px;
+  }
+
+  .imageBox img {
+    height: 180px; /* Reduce image height */
+  }
+
+  
+
+  
+}
+
+@media (max-width: 768px) {
+  .container {
+    width:80%;
+    padding: 1rem;
+    margin:auto;
+  }
+
+ 
+
+  .header p {
+   
+    text-align: center;
+    
+  }
+
+  .cardListWrapper {
+    /* grid-template-columns: 1fr; Single column layout */
+    gap: 2rem;
+    max-width: 600px;
+  }
+
+  .imageBox img {
+    height: 150px; /* Further reduce image height */
+  }
+
+ 
+
+ 
+}
+/* 
+@media (max-width: 480px) {
+  .container {
+  width:80%;
+    padding: 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+    text-align: center;
+ 
+  }
+
+  .cardListWrapper {
+    gap: 2.5rem;
+    max-width: 85%;
+  }
+
+  .imageBox img {
+    height: 120px; /
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+
+  .learnMore {
+    font-size: 1rem;
+  }
+} */

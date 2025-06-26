@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Study in UK",
+    "image": "https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "alt": "Big Ben and Houses of Parliament, London"
+  },
+  {
+    "id": 2,
+    "title": "Study in Canada",
+    "image": "https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "alt": "Toronto city skyline"
+  },
+  {
+    "id": 3,
+    "title": "Study in Australia",
+    "image": "https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "alt": "Sydney Opera House"
+  },
+  {
+    "id": 4,
+    "title": "Study in USA",
+    "image": "https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "alt": "Statue of Liberty in New York City"
+  },
+  {
+    "id": 5,
+    "title": "Study in New Zealand",
+    "image": "https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "alt": "Auckland city skyline with Sky Tower"
+  },
+  {
+    "id": 6,
+    "title": "Study in Europe",
+    "image": "https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "alt": "Eiffel Tower, Paris"
+  }
+]
