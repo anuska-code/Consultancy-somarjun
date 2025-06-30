@@ -2,7 +2,7 @@
 .topBar {
   width: 100%;
   box-sizing: border-box;
-    background-color: #b10000;
+  background-color: #b10000;
 }
 
 .topWrapper {
@@ -74,7 +74,7 @@
 }
 
 .logoText {
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #d22121;
   letter-spacing: 1px;

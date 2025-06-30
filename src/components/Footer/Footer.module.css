@@ -4,6 +4,7 @@
   /* margin:auto; */
   box-sizing: border-box;
   background-color: #f8f9fa;
+  margin-top: 20px;
 }
 
 .footer {
@@ -18,7 +19,7 @@
 .footerTop {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -162,7 +163,7 @@
 .testCopyrightWrapper {
   width: 100%;
   background-color: white;
-  padding: 12px 0px;
+  /* padding: 12px 0px; */
 }
 
 .testAndCopyrightBar {
@@ -175,7 +176,7 @@
 
 .testLinks {
   display: flex;
-  gap: 15px;
+  gap: 5px;
   align-items: center;
   font-size: 14px;
   font-weight: bold;
@@ -258,20 +259,18 @@
   .sectionTitle,
   .sectionTitls {
     text-align: left;
-    font-size: 16px;
-    margin-bottom: 15px;
+   
+    margin-bottom: 10px;
   }
 
   .contactInfo {
     gap: 10px;
   }
 
-  .contactItem {
-    font-size: 14px;
-  }
+  
 
   .testAndCopyrightBar {
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
     text-align: center;
     width: 100%;
@@ -281,14 +280,11 @@
   .testLinks {
     flex-direction: row;
     gap: 8px;
-    font-size: 13px;
   }
 
   .testLink {
     padding: 0;
   }
 
-  .copyrightText {
-    font-size: 12px;
-  }
+  
 }

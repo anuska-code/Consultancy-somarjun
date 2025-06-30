@@ -3,21 +3,16 @@
   background-color: #e6eff7;
   font-family: sans-serif;
   color: #333;
-
-  /* min-height: 100vh; */
 }
 
-/* Hero Section */
-.heroSection {
-      /* height: 90vh; */
-    width:80%;
-    margin:auto;
+
+.heroSection {    
+  width:80%;
+  margin:auto;
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   padding: 2rem 0rem 3rem 2rem;
-  gap: 5rem;
-  
+  gap: 5rem; 
 }
 
 .heroText {
@@ -31,21 +26,22 @@
 }
 
 .heroText p {
-    text-align: justify;
-  margin-top: 20px;
+  text-align: justify;
+  margin-top: 15px;
   font-size: 2.4rem;
   color: #555;
 }
 
 
 .centeredHeroText{
-      display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1;
   margin: auto;
 }
+
 .heroButtons {
   margin-top: 25px;
   display: flex;
@@ -82,27 +78,7 @@
   height: auto;
 }
 
-/* .supporttext {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  font-size: 18px;
-  color: #333;
-  padding-bottom: 50px;
-  position: relative;
-  margin: auto;
-}
 
-.supporttext::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: #1e4f91;
-  margin: 8px auto 0;
-  border-radius: 2px;
-} */
-
-/* Test Logos */
 .testLogos {
   display: flex;
   justify-content: center;
@@ -112,7 +88,6 @@
   padding: 40px 0;
 }
 
-/* Chat Widget */
 .chatWidget {
   position: fixed;
   bottom: 16px;
@@ -168,12 +143,6 @@
 }
 
 
-/* === MEDIA QUERIES === */
- 
-/* Tablet and up (medium screens) */
-
-
-/* Large screens (desktop and wider) */
 @media (max-width: 1080px) {
   .homepageWrapper {
     width: 100%;
@@ -184,7 +153,7 @@
     padding: 1rem;
   }
 }
-/* Mobile styles (small screens) */
+
 @media (max-width: 768px) {
   .homepageWrapper {
     margin: 0 auto;
@@ -193,7 +162,6 @@
   .heroSection {
     flex-wrap: wrap;
     padding: 1rem;
-    /* flex-direction: column; */
   }
 
   .heroText h1 {

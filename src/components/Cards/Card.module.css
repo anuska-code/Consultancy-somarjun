@@ -1,8 +1,6 @@
-/* components/Cards/Card.module.css */
 .container {
 width:80%;
 margin: auto;
-/* padding: 2rem; */
 text-align: center;
 min-height: 90vh;
 }
@@ -12,27 +10,27 @@ min-height: 90vh;
 }
 
 .header h2 {
-  font-size: 1.8rem;
-  color: #4b1e9e;
-  margin-bottom: 0.5rem;
+  margin-top: 10px;
+  font-size: 2.5rem;
+  color:black;
   font-weight: 700;
   font-family: Poppins, sans-serif;
 }
 
 .header p {
-  font-size: 2rem;
-  color: #4b1e9e;
-  margin: 0;
+  font-size: 2.3rem;
+  color:black;
+  padding:10px 20px;
   line-height: 1.5;
   font-family: Poppins, sans-serif;
 }
 
 .cardListWrapper {
-  width:80%;
-  margin:auto;
+  /* width:80%;
+  margin:auto; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 5rem;
   padding: 0;
   margin: auto;
 }
@@ -90,62 +88,50 @@ min-height: 90vh;
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .container {
-    width:80%;
-    height: auto; /* Allow height to adjust on smaller screens */
-    padding: 1.5rem;
+    width:100%;
+    height: auto;
+    padding: 0.5rem;
   }
 
   .header {
   margin-bottom: 2rem;
 }
-  
-
-  
 
   .cardListWrapper {
-    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    width:100%;
+    grid-template-columns: repeat(2, 1fr); 
     gap: 1.5rem;
-    max-width: 900px;
+  
+    padding: 1rem;
   }
 
   .imageBox img {
-    height: 180px; /* Reduce image height */
-  }
-
-  
-
-  
+    height: 180px; 
+  } 
 }
 
 @media (max-width: 768px) {
   .container {
-    width:80%;
+    width:100%;
     padding: 1rem;
     margin:auto;
   }
 
- 
-
-  .header p {
-   
+  .header p {   
     text-align: center;
-    
   }
 
   .cardListWrapper {
-    /* grid-template-columns: 1fr; Single column layout */
     gap: 2rem;
-    max-width: 600px;
+    width:100%;
+    padding:1rem;
   }
 
   .imageBox img {
-    height: 150px; /* Further reduce image height */
+    height: 150px; 
   }
-
- 
-
- 
 }
+
 /* 
 @media (max-width: 480px) {
   .container {

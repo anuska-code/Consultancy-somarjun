@@ -1,14 +1,13 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
 }
-
 
 body {
   font-family: 'Poppins', 'Roboto', Arial, sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -22,7 +21,7 @@ html {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     html {
         font-size: 45%;
         /* Adjust font size for mobile screens */

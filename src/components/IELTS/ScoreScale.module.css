@@ -1,0 +1,89 @@
+.scoreWrapper {
+  width:100%;
+  box-sizing: border-box;
+}
+
+.scorewrap{
+  width:80%;
+  margin:auto;
+  margin-top: 30px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scoreWrapper h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+
+.text h3{
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Add scrollable wrapper */
+.tableContainer {
+  margin-top:20px;
+  overflow-x: auto;
+}
+
+.scoreTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+  min-width: 400px;
+}
+
+.scoreTable th,
+.scoreTable td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.scoreTable th {
+  background-color: #c00;
+  color: white;
+  font-weight: 600;
+}
+
+/* Optional: hover effect for clarity */
+.scoreTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ✅ RESPONSIVE */
+@media (max-width: 768px) {
+  .scoreWrapper {
+    padding: 10px;
+    width:100%;
+  }
+
+  .scorewrap{
+    width:100%;
+  }
+
+  .scoreWrapper h3 {
+    text-align: center;
+  }
+
+  .scoreTable th,
+  .scoreTable td {
+    padding: 6px 10px;
+  }
+  
+  .tableconatiner{
+    margin-top:10px;
+  }
+}
+
