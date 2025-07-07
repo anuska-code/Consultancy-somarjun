@@ -1,0 +1,176 @@
+/* Wrapper for entire Study UK section */
+.studyUKWrapper {
+  width: 100%;
+  padding: 2rem 0;
+  background: #fff;
+  min-height: 90vh;
+}
+
+/* Section container */
+.studyUKSection {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Top heading wrapper */
+.herotext {
+  text-align: center;
+}
+
+/* Main heading */
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+/* Flex layout: text on left, image on right (desktop) */
+.studyUKContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Text section */
+.textSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 1rem;
+}
+
+/* Paragraphs */
+.paragraph {
+  font-size: 2.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Bullet list */
+.list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top:10px;
+}
+
+.list li {
+  margin-bottom: 1.7rem;
+}
+
+/* Image section */
+.imageSection {
+  flex: 1 1 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image style */
+.ukImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  padding: 3rem;
+}
+
+/* Bottom note wrapper */
+.footertext {
+  margin-top: 1rem;
+}
+
+/* Italic note */
+.note {
+  font-style: italic;
+  font-weight: 600;
+  color: #222;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* ---------- Responsive Design ---------- */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .studyUKContent {
+    flex-direction: column-reverse;
+    
+  }
+
+    .studyUKSection {
+    padding: 0 4rem;
+    width: 100%;
+  }
+
+  .textSection,
+  .imageSection {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .ukImage {
+   max-width:85%;
+    padding: 2rem;
+  }
+
+  .note{
+    font-size: 1.7rem;
+  }
+
+  .list{
+    margin-top:25px;
+  }
+}
+
+/* Mid-sized devices */
+@media (max-width: 720px) {
+  .studyUKSection {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .imageSection {
+    width: 100%;
+  }
+
+  .ukImage {
+    padding: 1rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .studyUKSection {
+    padding: 0 3rem;
+    width:100%;
+  }
+
+  .list {
+    padding-left: 1.2rem;
+  }
+
+  .note {
+    padding-left: 0.5rem;
+  }
+
+  .ukImage {
+    padding: 1rem;
+  }
+}

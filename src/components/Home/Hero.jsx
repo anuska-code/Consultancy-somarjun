@@ -2,61 +2,108 @@ import React from 'react';
 import { HiOutlineHand } from 'react-icons/hi';
 import { FaRegComments } from 'react-icons/fa';
 import styles from './Hero.module.css';
-import CardList from '../Cards/CardList';
-
+import CardList from '../HeroCard/CardList'; // Adjust the path as necessary
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
     <div className={styles.homepageWrapper}>
       {/* Hero Section */}
       <section className={styles.heroSection}>
-          <div className={styles.centeredHeroText}>
-        <div className={styles.heroText}>
-          <h1>
-            The best consultancy
-            <br />
-            Ensures your overseas success
-          </h1>
-          <p >
-            We are dedicated to providing the best information and innovative
-            services as a leading Study Abroad Consultancy in Nepal. Our
-            mission is to ensure students success, excellent career prospects,
-            and a bright future.
-          </p>
-          <div className={styles.heroButtons}>
-            <button className={styles.contactBtn}>Contact Us</button>
-            <button className={styles.applyBtn}>Apply Now</button>
+        <motion.div
+          className={styles.centeredHeroText}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className={styles.heroText}>
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              The best consultancy
+              <br />
+              Ensures your overseas success
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+            >
+              We are dedicated to providing the best information and innovative
+              services as a leading Study Abroad Consultancy in Nepal. Our
+              mission is to ensure students success, excellent career prospects,
+              and a bright future.
+            </motion.p>
+            <motion.div
+              className={styles.heroButtons}
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.2,
+                  },
+                },
+              }}
+            >
+              <motion.button
+                className={styles.contactBtn}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                Contact Us
+              </motion.button>
+              <motion.button
+                className={styles.applyBtn}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                Apply Now
+              </motion.button>
+            </motion.div>
           </div>
-        </div>
-        </div>
-        <div className={styles.heroImage}>
-          <img
-            src="images\hero-image.png"
-            alt="World Monuments"
-          />
-        </div>
+        </motion.div>
+
+        <motion.div
+          className={styles.heroImage}
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <img src="images/hero-image.png" alt="World Monuments" />
+        </motion.div>
       </section>
 
-     
-     
-{/* <div className={styles.supporttext}>
-  We are here to help you out at the best
-</div> */}
-
-      
       {/* Footer Help Chat */}
-      <div className={styles.chatWidget}>
+      <motion.div
+        className={styles.chatWidget}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1 }}
+      >
         <div className={styles.chatMessage}>
-           <HiOutlineHand style={{ marginRight: '6px' }} /> Hi! How can we help?
+          <HiOutlineHand style={{ marginRight: '6px' }} /> Hi! How can we help?
         </div>
         <button className={styles.chatButton}>I have a question</button>
         <button className={styles.chatButton}>Tell me more</button>
         <div className={styles.chatIconWrapper}>
-          <div className={styles.chatIcon}>    <FaRegComments /></div>
+          <div className={styles.chatIcon}>
+            <FaRegComments />
+          </div>
           <div className={styles.chatNotification}>1</div>
         </div>
-      </div>
-      <CardList/>
+      </motion.div>
+
+      <CardList />
     </div>
   );
 };
