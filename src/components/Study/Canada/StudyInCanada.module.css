@@ -1,0 +1,162 @@
+/* Main Container */
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.mainContainer {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Introduction Section */
+.introSection {
+  margin-bottom: 3rem;
+}
+
+.introContent {
+  width: 100%;
+}
+
+.mainHeading {
+  color: #2c3e50;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.orangeUnderline {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #ff6b35;
+  margin-bottom: 1.5rem;
+}
+
+.introText {
+  color: #555;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/* Student Visa Requirements Section */
+.visaSection {
+  margin-bottom: 3rem;
+}
+
+.visaContent {
+  width: 100%;
+}
+
+.sectionHeading {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.visaTextContent {
+  width: 100%;
+}
+
+.visaText {
+  color: #555;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.blueLink {
+  color: #3498db;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blueLink:hover {
+  text-decoration: underline;
+}
+
+/* Cost of Studying Section */
+.costSection {
+  margin-bottom: 3rem;
+}
+
+.costContent {
+  width: 100%;
+}
+
+.costTextContent {
+  width: 100%;
+}
+
+.costText {
+  color: #555;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Optional Animation Class (if needed with motion.div) */
+.fadeIn {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainContainer {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .mainHeading {
+    font-size: 2rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.8rem;
+  }
+
+  .introText,
+  .visaText,
+  .costText {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    padding: 0.5rem;
+  }
+
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.7rem;
+  }
+
+  .introText,
+  .visaText,
+  .costText {
+    font-size: 1.5rem;
+  }
+}

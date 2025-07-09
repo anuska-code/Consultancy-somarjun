@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import styles from './StudentForm.module.css';
 
 const StudentForm = () => {
@@ -17,9 +19,8 @@ const StudentForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false); // to disable button during submit
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Validation function
   const validate = () => {
     const newErrors = {};
     if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
@@ -50,7 +51,10 @@ const StudentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!validate()) return;
+    if (!validate()) {
+      toast.error('Please fix the errors in the form.');
+      return;
+    }
 
     setIsSubmitting(true);
 
@@ -71,7 +75,7 @@ const StudentForm = () => {
         '3eZo6IQe6M4zae1v7'
       );
 
-      alert('Form submitted successfully!');
+      toast.success('Form submitted successfully!');
       setFormData({
         firstName: '',
         lastName: '',
@@ -85,7 +89,7 @@ const StudentForm = () => {
       setErrors({});
     } catch (error) {
       console.error('Failed to send email:', error);
-      alert('Failed to submit the form, please try again.');
+      toast.error('Failed to submit the form, please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -93,6 +97,8 @@ const StudentForm = () => {
 
   return (
     <div className={styles.formContainer}>
+      <ToastContainer theme="dark" position="top-right" autoClose={3000} hideProgressBar />
+
       <div className={styles.formWrapper}>
         <div className={styles.titleWrapper}>
           <h2 className={styles.formTitle}>Your Details:</h2>
@@ -159,7 +165,7 @@ const StudentForm = () => {
             </div>
           </div>
 
-          {/* Mobile Number with react-phone-input-2 */}
+          {/* Mobile Number and Study Level */}
           <div className={styles.formRow}>
             <div className={styles.inputWrapper}>
               <div className={styles.inputContainer}>
@@ -198,7 +204,6 @@ const StudentForm = () => {
               </div>
             </div>
 
-            {/* Intended Level of Study */}
             <div className={styles.inputWrapper}>
               <div className={styles.inputContainer}>
                 <label htmlFor="studyLevel" className={styles.inputLabel}>
@@ -223,7 +228,7 @@ const StudentForm = () => {
             </div>
           </div>
 
-          {/* Nationality, Region, Intended Study Date */}
+          {/* Nationality, Region, and Study Date */}
           <div className={styles.formRow}>
             <div className={styles.inputWrapper}>
               <div className={styles.inputContainer}>

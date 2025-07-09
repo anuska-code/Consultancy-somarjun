@@ -1,14 +1,36 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './StudyUK.module.css';
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
 
 const StudyUK = () => {
   return (
-    <div className={styles.studyUKWrapper}>
+    <motion.div
+      className={styles.studyUKWrapper}
+      initial="hidden"
+      animate="visible"
+      variants={fadeUp}
+    >
       <div className={styles.studyUKSection}>
-        <div className={styles.herotext}>
-        <h2 className={styles.heading}>Why Study in UK from Nepal?</h2>
-</div>
-        <div className={styles.studyUKContent}>
+        <motion.div
+          className={styles.herotext}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <h2 className={styles.heading}>Why Study in UK from Nepal?</h2>
+        </motion.div>
+        
+        <motion.div
+          className={styles.studyUKContent}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           <div className={styles.textSection}>
             <p className={styles.paragraph}>
               The United Kingdom is renowned for its quality of education. Many universities established in the 12th century have become leaders in the education world. Study in UK, providing quality education and pioneered the education culture.
@@ -27,24 +49,34 @@ const StudyUK = () => {
               <li>UK courses are generally shorter than other countries, helping to reduce overall tuition fees and accommodation costs.</li>
               <li>It can be possible to work while you study too.</li>
             </ul>
-           
           </div>
 
-          <div className={styles.imageSection}>
+          <motion.div
+            className={styles.imageSection}
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+          >
             <img
-              src="/images/uk.png" 
+              src="/images/uk.png"
               alt="UK University"
               className={styles.ukImage}
             />
-          </div>
-        </div>
-         <div className={styles.footertext}>
-            <p className={styles.note}>
-              Stick around till the end to find out everything you need to know as a Nepali student planning for higher education in the UK.
-            </p>
-            </div>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className={styles.footertext}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+        >
+          <p className={styles.note}>
+            Stick around till the end to find out everything you need to know as a Nepali student planning for higher education in the UK.
+          </p>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

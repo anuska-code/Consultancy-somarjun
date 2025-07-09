@@ -1,3 +1,4 @@
+/* ===================== Main Wrapper ===================== */
 .homepageWrapper {
   width: 100%;
   background-color: #e6eff7;
@@ -5,16 +6,17 @@
   color: #333;
 }
 
-
-.heroSection {    
-  width:80%;
-  margin:auto;
+/* ===================== Hero Section ===================== */
+.heroSection {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0rem 3rem 2rem;
-  gap: 5rem; 
+  gap: 5rem;
 }
 
+/* ===================== Hero Text ===================== */
 .heroText {
   flex: 1;
 }
@@ -32,8 +34,8 @@
   color: #555;
 }
 
-
-.centeredHeroText{
+/* ===================== Centered Hero Text Container ===================== */
+.centeredHeroText {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +44,7 @@
   margin: auto;
 }
 
+/* ===================== Hero Buttons ===================== */
 .heroButtons {
   margin-top: 25px;
   display: flex;
@@ -67,90 +70,42 @@
   cursor: pointer;
 }
 
+/* ===================== Hero Image ===================== */
 .heroImage {
   flex: 1;
-  margin:auto;
+  margin: auto;
 }
 
 .heroImage img {
-  padding: 1 rem;
+  padding: 1rem;
   width: 100%;
   height: auto;
 }
 
 
-.testLogos {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 40px 0;
-}
-
-.chatWidget {
+/* ===================== Time Widget ===================== */
+.timeWidgetContainer {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; 
+  height: auto;
 }
 
-.chatMessage {
-  background-color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.chatButton {
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.chatIconWrapper {
-  position: relative;
-}
-
-.chatIcon {
-  background-color: #007bff;
-  color: white;
-  border-radius: 9999px;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.chatNotification {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: red;
-  color: white;
-  font-size: 12px;
-  padding: 2px 5px;
-  border-radius: 9999px;
-}
-
-
+/* ===================== Media Queries ===================== */
 @media (max-width: 1080px) {
   .homepageWrapper {
     width: 100%;
     margin: auto;
   }
-  .heroSection{
+
+  .heroSection {
     width: 100%;
     padding: 1rem;
+  }
+
+    .timeWidgetContainer {
+    display: none;
   }
 }
 
@@ -173,16 +128,8 @@
     align-items: flex-start;
   }
 
-  .testLogos {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0;
-  }
-
-  .chatWidget {
-    bottom: 10px;
-    right: 10px;
+    .timeWidgetContainer {
+    display: none;
   }
 }
 
@@ -195,5 +142,17 @@
     flex-wrap: wrap;
     padding: 1rem;
     flex-direction: column-reverse;
+  }
+
+    .timeWidgetContainer {
+    display: none;
+  }
+}
+
+
+/* Optional: Responsive tweak */
+@media (max-width: 480px) {
+  .timeWidgetContainer {
+ display: none;
   }
 }

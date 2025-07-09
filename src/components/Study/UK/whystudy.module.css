@@ -1,0 +1,244 @@
+/* StudyInUK.module.css */
+.studywrapper{
+    width:100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.studyUkContainer {
+  width: 80%;
+  margin: auto;
+  padding: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header Section */
+.headerWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.headerContent {
+  background: transparent;
+  padding: 0;
+}
+
+.mainTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 27px 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.headerDescription {
+  font-size: 2.2rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Section Wrapper */
+.sectionWrapper {
+  width: 85%;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background: #e8e8e8;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.sectionHeader:hover {
+  background: #dcdcdc;
+}
+
+.sectionIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.sectionTitleContainer {
+  flex: 1;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.toggleIcon {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #666;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+/* Section Content */
+.sectionContent {
+  padding: 1.5rem;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contentText {
+  font-size: 1.8rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.contentText:last-child {
+  margin-bottom: 0;
+}
+
+.highlightText {
+  font-size: 1.95rem;
+  color: #1a1a1a;
+  margin: 1rem 0 0.5rem 0;
+  font-weight:bold;
+  line-height: 1.4;
+}
+
+.universityList {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.universityList li {
+  font-size: 1.7rem;
+  color: #444;
+  padding: 0.25rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.universityList li::before {
+  content: "•";
+  color: #666;
+  position: absolute;
+  left: 0;
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  .studyUkContainer {
+    padding: 2.5rem;
+  }
+  
+  .sectionHeader {
+    padding: 1.25rem 2rem;
+  }
+  
+  .sectionContent {
+    padding: 2rem;
+  }
+}
+
+/* Mobile specific */
+@media (max-width: 768px) {
+  .studyUkContainer {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+    .mainTitle {
+    font-size: 2.4rem;
+  }
+
+  .headerDescription {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .contentText {
+    font-size: 1.5rem;
+  }
+
+  .highlightText {
+    font-size: 1.6rem;
+  }
+
+  .universityList li {
+    font-size: 1.4rem;
+  }
+
+  .sectionIcon {
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+  }
+
+  .sectionContent {
+    padding: 1rem;
+  }
+
+  .sectionHeader {
+    padding: 1rem;
+  }
+}
+
+
+@media (max-width: 420px){
+  .studyUkContainer {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+    .mainTitle {
+    font-size: 2.4rem;
+  }
+
+  .headerDescription {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .contentText {
+    font-size: 1.5rem;
+  }
+
+  .highlightText {
+    font-size: 1.6rem;
+  }
+
+  .universityList li {
+    font-size: 1.4rem;
+  }
+
+  .sectionIcon {
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+  }
+
+  .sectionContent {
+    padding: 1rem;
+  }
+
+  .sectionHeader {
+    padding: 1rem;
+  }
+}

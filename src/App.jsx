@@ -13,12 +13,15 @@ import PopularCourse from './pages/Popular-course/Courses.jsx';
 import Blogs from './pages/Blogs/Blogs.jsx';
 import Aboutus from './pages/Aboutus/About.jsx';
 import Reviews from './pages/Reviews/Review.jsx';
-import Contactus from './pages/Contactus/Contact.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Austraila from './pages/Study-abroad/Austraila.jsx';
 import StudyAbroad from './pages/Study-abroad/StudyAbroad.jsx';
 import Newzeland from './pages/Study-abroad/Newzeland.jsx';
 import Uk from './pages/Study-abroad/Uk.jsx';
+import Contact from './pages/Contactus/Contact.jsx';
+import Contactus from './pages/Contactus/Contact.jsx';
+import Address from './pages/Contactus/Address.jsx';
+import Canada from './pages/Study-abroad/Canada.jsx';
 
 
 function App() {
@@ -39,7 +42,7 @@ function App() {
         <Route path="/study-abroad" element={<StudyAbroad/>} >
          <Route path="australia" element={<Austraila   />} />
           <Route path="new-zealand" element={<Newzeland/>} />
-          {/* <Route path="canada" element={<SAT />} /> */}
+          <Route path="canada" element={<Canada />} />
            <Route path="uk" element={<Uk />} />
           {/* <Route path="usa" element={<PTE />} />
           <Route path="ireland" element={<SAT />} />
@@ -84,8 +87,9 @@ function App() {
         </Route> */}
 
         </Route>
-        <Route path="/contact-us" element={<Contactus />} >
-        {/* <Route path="Enquiry" element={<SAT />} /> */}
+        <Route path="/contact" element={<Address />} >
+
+        <Route path="enquiry" element={<Contact />} />
         </Route>
         <Route path="/review" element={<Reviews />} />
       </Routes>

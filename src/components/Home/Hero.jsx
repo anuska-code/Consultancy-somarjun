@@ -4,6 +4,7 @@ import { FaRegComments } from 'react-icons/fa';
 import styles from './Hero.module.css';
 import CardList from '../HeroCard/CardList'; // Adjust the path as necessary
 import { motion } from 'framer-motion';
+import TimeMain from '../Time/TimeMain';
 
 const Hero = () => {
   return (
@@ -83,27 +84,12 @@ const Hero = () => {
         </motion.div>
       </section>
 
-      {/* Footer Help Chat */}
-      <motion.div
-        className={styles.chatWidget}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 1 }}
-      >
-        <div className={styles.chatMessage}>
-          <HiOutlineHand style={{ marginRight: '6px' }} /> Hi! How can we help?
-        </div>
-        <button className={styles.chatButton}>I have a question</button>
-        <button className={styles.chatButton}>Tell me more</button>
-        <div className={styles.chatIconWrapper}>
-          <div className={styles.chatIcon}>
-            <FaRegComments />
-          </div>
-          <div className={styles.chatNotification}>1</div>
-        </div>
-      </motion.div>
+      
 
       <CardList />
+      <div className={styles.timeWidgetContainer}>
+  <TimeMain />
+</div>
     </div>
   );
 };

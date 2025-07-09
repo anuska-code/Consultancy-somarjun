@@ -1,12 +1,12 @@
-/* Wrapper for entire Study UK section */
+
 .studyUKWrapper {
   width: 100%;
   padding: 2rem 0;
   background: #fff;
-  min-height: 90vh;
+ margin-bottom: 80px;
 }
 
-/* Section container */
+
 .studyUKSection {
   width: 80%;
   margin: auto;
@@ -15,12 +15,12 @@
   gap: 2rem;
 }
 
-/* Top heading wrapper */
+
 .herotext {
   text-align: center;
 }
 
-/* Main heading */
+
 .heading {
   font-size: 3rem;
   font-weight: 700;
@@ -28,7 +28,7 @@
   margin-bottom: 1rem;
 }
 
-/* Flex layout: text on left, image on right (desktop) */
+
 .studyUKContent {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@
   gap: 2rem;
 }
 
-/* Text section */
+
 .textSection {
   flex: 2;
   display: flex;
@@ -46,7 +46,7 @@
   padding: 1rem;
 }
 
-/* Paragraphs */
+
 .paragraph {
   font-size: 2.2rem;
   color: #333;
@@ -55,7 +55,6 @@
   text-align: justify;
 }
 
-/* Bullet list */
 .list {
   list-style-type: disc;
   padding-left: 2rem;
@@ -70,7 +69,7 @@
   margin-bottom: 1.7rem;
 }
 
-/* Image section */
+
 .imageSection {
   flex: 1 1 15%;
   display: flex;
@@ -78,7 +77,6 @@
   align-items: center;
 }
 
-/* Image style */
 .ukImage {
   width: 100%;
   height: auto;
@@ -87,12 +85,12 @@
   padding: 3rem;
 }
 
-/* Bottom note wrapper */
+
 .footertext {
   margin-top: 1rem;
 }
 
-/* Italic note */
+
 .note {
   font-style: italic;
   font-weight: 600;
@@ -101,16 +99,16 @@
   line-height: 1.5;
 }
 
-/* ---------- Responsive Design ---------- */
-
-/* Tablets and small laptops */
 @media (max-width: 1024px) {
   .studyUKContent {
-    flex-direction: column-reverse;
-    
+    flex-direction: column-reverse; 
   }
 
-    .studyUKSection {
+  .studyUKWrapper{
+  margin:0;
+  }
+
+   .studyUKSection {
     padding: 0 4rem;
     width: 100%;
   }
@@ -136,10 +134,14 @@
 }
 
 /* Mid-sized devices */
-@media (max-width: 720px) {
+@media (max-width: 768px){
   .studyUKSection {
     padding: 0 1rem;
     width: 100%;
+  }
+
+  .studyUKWrapper{
+  margin:0;
   }
 
   .heading {
@@ -160,6 +162,10 @@
   .studyUKSection {
     padding: 0 3rem;
     width:100%;
+  }
+
+  .studyUKWrapper{
+  margin:0;
   }
 
   .list {

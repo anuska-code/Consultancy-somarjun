@@ -77,15 +77,25 @@ const Navbar = () => {
       {/* 🔝 TOP BAR */}
       <div className={styles.topBar}>
         <div className={styles.topWrapper}>
-          <div className={styles.topLeft}>
-            <span>
-              <FaGlobe />
-              <a href="mailto:info@thenext.edu.np" style={{ color: 'inherit', textDecoration: 'none' }}>
-                info@thenext.edu.np
-              </a>
-            </span>
-            <span><FaPhoneAlt /> +977–01–5970268</span>
-          </div>
+<div className={styles.topLeft}>
+  <div className={styles.contactGroups}>
+    <span>
+      <FaGlobe />
+      <a
+        href="mailto:info@thenext.edu.np"
+        style={{ color: 'inherit', textDecoration: 'none' }}
+      >
+        info@thenext.edu.np
+      </a>
+    </span>
+  </div>
+  <div className={styles.contactGroup}>
+    <span>
+      <FaPhoneAlt /> +977–01–5970268
+    </span>
+  </div>
+</div>
+
           <div className={styles.topRight}>
             <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
             <a href="https://www.viber.com" target="_blank" rel="noopener noreferrer"><FaViber /></a>
@@ -103,8 +113,8 @@ const Navbar = () => {
         <div className={styles.navWrapper}>
           <div className={styles.logoBox}>
             <Link to="/" className={styles.logoLink} onClick={handleMenuClick}>
-              <img src="/images/thenextlogo.jpg" alt="logo" className={styles.logoImg} />
-              <span className={styles.logoText}>THE NEXT</span>
+              <img src="\images\Squared Logo 1 (1).svg" alt="logo" className={styles.logoImg} />
+             
             </Link>
           </div>
 

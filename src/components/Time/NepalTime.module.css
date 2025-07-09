@@ -1,0 +1,122 @@
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 24rem;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.locationInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.locationIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #ef4444;
+}
+
+.locationText {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #374151;
+  font-family:Poppins, sans-serif;
+}
+
+/* Time Section */
+.timeSection {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loadingTime {
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.loadingDate {
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Error States */
+.errorContainer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.errorMessage {
+  color: #ef4444;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.errorSubtext {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Time Display */
+.time {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-family: 'Courier New', monospace;
+  letter-spacing: -0.025em;
+}
+
+.date {
+  font-size: 0.98rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Bottom Accent */
+.accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.25rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .time {
+    font-size: 1.875rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+}
