@@ -120,9 +120,16 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1080px) {
+  .mainContainer {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .mainContainer {
-    max-width: 100%;
+    width: 100%;
     padding: 1rem;
   }
 
@@ -143,6 +150,7 @@
 
 @media (max-width: 480px) {
   .mainContainer {
+    width:100%;
     padding: 0.5rem;
   }
 

@@ -8,20 +8,19 @@ const Footer = () => {
     <div className={styles.footerWrapper}>
       <footer className={styles.footer}>
         <div className={styles.footerTop}>
-          {/* Logo and Description Section */}
+        
           <div className={styles.logoSection}>
             <div className={styles.logoContainer}>
               <div className={styles.logoBox}>
                 <span className={styles.logoH}>H</span>
               </div>
               <div className={styles.logoText}>
-                <span className={styles.hardford}>HARDFORD</span>
-                <span className={styles.education}>EDUCATION</span>
+                <span className={styles.hardford}>Somarjun</span>
+                <span className={styles.education}>Tech Company</span>
               </div>
             </div>
             <p className={styles.description}>
-              Hardford Education was founded with a mission to make education 
-              ACCESSIBLE and SIMPLE
+           Somarjun Tech Company serves a wide range of clients, primarily focusing on business leveraging digital transformation through modern design, technology, and software solutions.
             </p>
           </div>
 

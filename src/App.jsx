@@ -22,6 +22,7 @@ import Contact from './pages/Contactus/Contact.jsx';
 import Contactus from './pages/Contactus/Contact.jsx';
 import Address from './pages/Contactus/Address.jsx';
 import Canada from './pages/Study-abroad/Canada.jsx';
+import USA from './pages/Study-abroad/USA.jsx';
 
 
 function App() {
@@ -44,8 +45,8 @@ function App() {
           <Route path="new-zealand" element={<Newzeland/>} />
           <Route path="canada" element={<Canada />} />
            <Route path="uk" element={<Uk />} />
-          {/* <Route path="usa" element={<PTE />} />
-          <Route path="ireland" element={<SAT />} />
+          <Route path="usa" element={<USA/>} />
+          {/* <Route path="ireland" element={<SAT />} />
           <Route path="denmark" element={<SAT />} /> */}
         </Route>
 

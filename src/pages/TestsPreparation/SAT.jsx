@@ -1,11 +1,11 @@
 import React from 'react'
-import Main from '../../components/SAT/Main';
+
+import SATMain from '../../components/SAT/SATMain';
 
 const SAT = () => {
   return (
     <>
-     <div>SAT</div>
-    <Main />
+<SATMain/>
     </>
    
   )

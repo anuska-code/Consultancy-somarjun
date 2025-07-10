@@ -116,7 +116,7 @@
 /* Responsive Design */
 
 /* Tablet Devices */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .studyContent,
   .educationSystem {
     width: 100%;

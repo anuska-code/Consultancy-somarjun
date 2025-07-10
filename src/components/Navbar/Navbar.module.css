@@ -307,3 +307,10 @@
   }
 }
 }
+
+
+@media (max-width: 420px) {
+  .topWrapper {
+    width: 100%;
+  }
+}

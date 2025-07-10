@@ -64,11 +64,6 @@
 
 /* ✅ RESPONSIVE */
 @media (max-width: 768px) {
-  .scoreWrapper {
-    padding: 10px;
-    width:100%;
-  }
-
   .scorewrap{
     width:100%;
   }
@@ -87,3 +82,15 @@
   }
 }
 
+
+@media (max-width: 1080px) {
+  .scorewrap{
+    width:100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .scorewrap{
+    width:100%;
+  }
+}

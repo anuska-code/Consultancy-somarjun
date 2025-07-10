@@ -139,8 +139,9 @@
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   .studyUkContainer {
+    width:80%;
     padding: 2.5rem;
   }
   
