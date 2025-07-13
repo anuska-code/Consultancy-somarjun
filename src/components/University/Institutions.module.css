@@ -1,0 +1,49 @@
+.wrapper {
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: #f9fbfd;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c00;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  min-width: 300px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+}

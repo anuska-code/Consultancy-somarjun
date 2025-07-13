@@ -10,8 +10,7 @@ import SAT from './pages/TestsPreparation/SAT.jsx';
 import Universities from './pages/Universities/Universities.jsx';
 import Serviceus from './pages/Serviceus/Content.jsx';
 import PopularCourse from './pages/Popular-course/Courses.jsx';
-import Blogs from './pages/Blogs/Blogs.jsx';
-import Aboutus from './pages/Aboutus/About.jsx';
+
 import Reviews from './pages/Reviews/Review.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Austraila from './pages/Study-abroad/Austraila.jsx';
@@ -23,6 +22,17 @@ import Contactus from './pages/Contactus/Contact.jsx';
 import Address from './pages/Contactus/Address.jsx';
 import Canada from './pages/Study-abroad/Canada.jsx';
 import USA from './pages/Study-abroad/USA.jsx';
+import Ireland from './pages/Study-abroad/Ireland.jsx';
+import Denmark from './pages/Study-abroad/Denmark.jsx';
+import Blog from './pages/Blogs/Blog.jsx';
+import Introduction from './components/About/Introduction.jsx';
+import Aboutus from './pages/Aboutus/Aboutus.jsx';
+import Objectives from './components/About/Objectives.jsx';
+import Albums from './components/About/Gallery/Albums.jsx';
+import VideoGallery from './components/About/Gallery/VideoGallery.jsx';
+import Galleriy from './pages/Aboutus/Galleriy/Galleriy.jsx';
+
+
 
 
 function App() {
@@ -46,8 +56,8 @@ function App() {
           <Route path="canada" element={<Canada />} />
            <Route path="uk" element={<Uk />} />
           <Route path="usa" element={<USA/>} />
-          {/* <Route path="ireland" element={<SAT />} />
-          <Route path="denmark" element={<SAT />} /> */}
+          <Route path="ireland" element={<Ireland />} />
+          <Route path="denmark" element={<Denmark/>} />
         </Route>
 
         <Route path="/universities" element={<Universities />} />
@@ -76,20 +86,19 @@ function App() {
           <Route path="Arts" element={<SAT />} /> */}
         </Route>
 
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs" element={<Blog />} />
 
-        <Route path="/aboutus" element={<Aboutus />} >
-        {/* <Route path="Introduction" element={<PTE />} />
-          <Route path="Objectives" element={<SAT />} />
+      <Route path="/about" element={<Aboutus/>} >
+  <Route path="introduction" element={<Introduction/>} />
+  <Route path="objectives" element={<Objectives/>} />
+  <Route path="gallery" element={<Galleriy/>} >
+    <Route path="albums" element={<Albums/>} />
+    <Route path="video" element={<VideoGallery/>} />
+  </Route>
+</Route>
 
-          <Route path="Gallery" element={<SAT />} >
-          <Route path="Albums" element={<PTE />} />
-          <Route path="Video Gallery" element={<SAT />} />
-        </Route> */}
-
-        </Route>
+        
         <Route path="/contact" element={<Address />} >
-
         <Route path="enquiry" element={<Contact />} />
         </Route>
         <Route path="/review" element={<Reviews />} />

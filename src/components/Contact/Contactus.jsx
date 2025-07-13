@@ -111,6 +111,25 @@ const Contactus = () => {
                       name: 'mobileNumber',
                       required: true,
                     }}
+                    containerClass={styles.phoneContainer}
+                    inputStyle={{
+                      width: '100%',
+                      height: '50px',
+                      fontSize: '1.6rem',
+                      padding: '1rem',
+                      border: '1px solid #ccc',
+                      borderRadius: '4px',
+                      boxSizing: 'border-box'
+                    }}
+                    buttonStyle={{
+                      height: '50px',
+                      border: '1px solid #ccc',
+                      borderRadius: '4px 0 0 4px',
+                      backgroundColor: '#fff'
+                    }}
+                    containerStyle={{
+                      width: '100%'
+                    }}
                   />
                   <ErrorMessage name="mobileNumber" component="div" className={styles.errorMsg} />
                 </div>
@@ -148,7 +167,7 @@ const Contactus = () => {
 
                 <div className={styles.recaptchaBox}>
                   <input type="checkbox" ref={recaptchaRef} />
-                  <span>I’m not a robot</span>
+                  <span>I'm not a robot</span>
                   <img
                     src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
                     alt="captcha"

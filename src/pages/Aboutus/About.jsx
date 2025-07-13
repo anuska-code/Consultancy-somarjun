@@ -1,11 +1,13 @@
 import React from 'react';
-import Intro from '../../components/About/Intro';
+import ABoutFinal from '../../components/About/ABoutFinal';
+
+
 
 const About = () => {
   return (
     <>
     
-<Intro />
+<ABoutFinal/>
     </>
   )
 }

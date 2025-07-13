@@ -1,0 +1,72 @@
+.wrapper {
+width: 100%;
+padding: 1rem 2rem;
+box-sizing: border-box  ;
+margin-top: 5px;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  font-size: 3em;      
+  margin-bottom: 5rem;
+  color: #444;             
+  font-weight: 500;      
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #d81010;             
+  font-weight: 500;      
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.5rem  ; 
+  line-height: 1.5;
+
+  text-align: justify;
+}
+
+
+@media (max-width:1080px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width:420px) {
+  .container {
+    width: 100%;
+  }
+}

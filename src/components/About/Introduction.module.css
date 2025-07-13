@@ -1,0 +1,82 @@
+/* File: WhyUs.module.css */
+
+.mainWrapper {
+ width: 100%;
+ box-sizing: border-box;
+  background-color: #f9fbfd;
+}
+
+.container{
+  width: 80%;
+  margin:auto;
+  padding: 2rem 2rem;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.textContainer {
+  flex: 1;
+  color: #1a1a1a;
+}
+
+.textContainer h2 {
+  color: #184aad;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.textContainer p {
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* Responsive */
+
+@media (max-width:1080px) {
+  .container {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .imageContainer img {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width:420px) {
+  .container {
+    width:100%;
+  }
+}
