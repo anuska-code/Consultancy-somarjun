@@ -1,0 +1,337 @@
+.mainWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Header Section */
+.headerSection {
+  margin-bottom: 2rem;
+}
+
+.headerContent {
+  text-align: center;
+}
+
+.headerTitle {
+  color: #c41e3a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.headerSubtitle {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* Introduction Section */
+.introSection {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.introTextWrapper {
+  flex: 1;
+}
+
+.introText p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  color: #333;
+  line-height: 1.7;
+  font-size: 1.8rem;
+}
+
+.introImageWrapper {
+  flex: 0 0 40%;
+  max-width: 400px;
+  position: relative;
+}
+
+.introImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.guideLabel {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #8b4cb8;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  max-width: 150px;
+}
+
+.guideLabelHeader {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.guideLabelTitle {
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+.guideLabelSubtext {
+  font-size: 0.6rem;
+  opacity: 0.9;
+}
+
+/* Universities Section */
+.universitiesSection {
+  margin-bottom: 3rem;
+}
+
+.universitiesContent {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.universitiesTitle {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.universitiesText p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.linkText {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.linkUrl {
+  color: #c41e3a;
+  font-weight: 500;
+}
+
+.universitiesList {
+  padding: 1.5rem;
+}
+
+.rankedList {
+  list-style: none;
+  counter-reset: university-counter;
+  padding: 0;
+}
+
+.rankedList li {
+  counter-increment: university-counter;
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+  position: relative;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.rankedList li::before {
+  content: counter(university-counter) ". ";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.rankedList li:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* Courses Section */
+.coursesSection {
+  margin-bottom: 3rem;
+}
+
+.coursesContent {
+  padding: 1rem;
+}
+
+.coursesMainTitle {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Updated Course Title */
+.courseTitle {
+  color: #c41e3a;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Updated Course Table */
+.courseTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+}
+
+.courseTable th,
+.courseTable td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: 1.5rem;
+}
+
+.courseTable th {
+  
+  font-weight: 600;
+  width: 30%;
+}
+
+.courseTable td {
+  background-color: #fff;
+  font-weight: 400;
+}
+
+/* Lists Inside Table Cells */
+.requirementsList,
+.careerList,
+.futureStudyList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.requirementsList li,
+.careerList li,
+.futureStudyList li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.requirementsList li::before,
+.careerList li::before,
+.futureStudyList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c41e3a;
+  font-weight: bold;
+}
+
+.requirementsList li:hover,
+.careerList li:hover,
+.futureStudyList li:hover {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+  .tableHeading {
+    color: #333;
+    padding: 0.75rem;
+    font-size: 1rem;
+  background-color: #fff;
+  color:black;
+  width: 100%;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 1080px) {
+.container {
+  width: 100%; 
+}
+}
+
+@media (max-width: 768px) {
+.container {
+  width: 100%; 
+}
+
+  .introSection {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .introImageWrapper,
+  .introTextWrapper {
+    width: 100%;
+  }
+
+  .mainWrapper {
+    padding: 0.5rem;
+  }
+
+  .universitiesContent,
+  .universitiesList {
+    padding: 1.5rem;
+  }
+
+  .courseTable,
+  .courseTable thead,
+  .courseTable tbody,
+  .courseTable th,
+  .courseTable td,
+  .courseTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  .courseTable tr {
+    margin-bottom: 1.5rem;
+  }
+
+  .tableHeading {
+    color: #333;
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .tableData {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    background-color: #fff;
+    border-top: none;
+  }
+}
+
+@media (max-width: 420px) {
+.container {
+  width: 100%; 
+}
+}

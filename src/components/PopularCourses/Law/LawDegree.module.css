@@ -1,0 +1,325 @@
+/* Main wrapper */
+.mainWrapper {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Section Wrappers */
+.headerSection,
+.degreeSection {
+  margin-bottom: 3rem;
+}
+
+/* Titles */
+.mainTitle {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #c41e3a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #c41e3a;
+  margin-bottom: 3.2rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.subTitle {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #c41e3a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Text */
+.bodyText {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Lists */
+.universityList,
+.requirementList {
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.universityList li,
+.requirementList li {
+  margin-bottom: 1.1rem;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.nestedList {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.nestedList li {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.9rem;
+}
+
+/* Download Section */
+.downloadWrapper {
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.downloadText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.downloadButton {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #c41e3a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #a91b32;
+}
+
+/* Card Grid */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #c41e3a;
+}
+
+.cardText {
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Table Styling */
+.tableWrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.customTable th,
+.customTable td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.customTable th {
+  background-color: #333;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Flex row for side-by-side layout */
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.flexItem {
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .mainTitle {
+    font-size: 2.6rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.4rem;
+  }
+
+  .subTitle {
+    font-size: 1.8rem;
+  }
+
+  .bodyText,
+  .cardText,
+  .downloadText,
+  .downloadButton,
+  .universityList li,
+  .requirementList li {
+    font-size: 1.5rem;
+  }
+
+  .nestedList li {
+    font-size: 1.3rem;
+  }
+
+  .cardTitle {
+    font-size: 1.7rem;
+  }
+
+  .customTable th,
+  .customTable td {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .mainTitle {
+    font-size: 3.6rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.6rem;
+  }
+
+  .subTitle {
+    font-size: 1.8rem;
+  }
+
+  .bodyText,
+  .cardText,
+  .downloadText,
+  .downloadButton,
+  .universityList li,
+  .requirementList li {
+    font-size: 1.6rem;
+  }
+
+  .nestedList li {
+    font-size: 1.4rem;
+  }
+
+  .cardTitle {
+    font-size: 1.8rem;
+  }
+
+  .customTable th,
+  .customTable td {
+    font-size: 1.6rem;
+  }
+
+  .flexItem {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 100%;
+  }
+
+  .flexRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .mainTitle {
+    font-size: 3.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.4rem;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+  }
+
+  .bodyText,
+  .cardText,
+  .downloadText,
+  .downloadButton,
+  .universityList li,
+  .requirementList li {
+    font-size: 1.5rem;
+  }
+
+  .nestedList li {
+    font-size: 1.4rem;
+  }
+
+  .cardTitle {
+    font-size: 1.7rem;
+  }
+
+  .customTable th,
+  .customTable td {
+    font-size: 1.5rem;
+  }
+}

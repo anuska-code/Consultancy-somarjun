@@ -1,0 +1,313 @@
+.mainWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+/* Header Section */
+.headerSection {
+  margin-bottom: 2rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.headerTextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainTitle {
+  font-size: 3.4rem; /* Desktop large */
+  font-weight: 700;
+  color: #c41e3a;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.descriptionContainer {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.descriptionText {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Course Section */
+.courseSection {
+  margin-bottom: 2rem;
+}
+
+.courseSectionWrapper {
+  padding: 1.5rem;
+}
+
+.courseInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.courseDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.courseDetailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.detailIcon {
+  font-size: 1.8rem;
+  color: #c41e3a;
+}
+
+.detailLabel {
+  font-size: 1.8rem;
+}
+
+.courseDetailText {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  margin-left: 2rem;
+}
+
+/* Requirements Section */
+.requirementsSection {
+  margin-bottom: 2rem;
+}
+
+.requirementsSectionWrapper {
+  padding: 1.5rem;
+}
+
+.requirementsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.requirementBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.requirementSubtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.requirementText {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  text-align: justify;
+}
+
+.requirementList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.requirementListItem {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.requirementListItem::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c41e3a;
+  font-weight: bold;
+}
+
+.testName {
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Colleges Section */
+.collegesSection {
+  margin-bottom: 2rem;
+}
+
+.collegesSectionWrapper {
+  padding: 1.5rem;
+}
+
+.collegesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.collegesIntro {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 0.5rem;
+}
+
+.collegesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;
+}
+
+.collegeCard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.collegeCard:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.collegeIcon {
+  font-size: 1.8rem;
+  color: #c41e3a;
+  flex-shrink: 0;
+}
+
+.collegeName {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+  }
+
+  .mainWrapper {
+    padding: 0.5rem 1rem;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .courseDetailText {
+    margin-left: 0;
+  }
+
+  .collegesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.4rem;
+  }
+
+  .requirementSubtitle {
+    font-size: 1.7rem;
+  }
+
+  .descriptionText,
+  .courseDetailText,
+  .detailLabel,
+  .courseDetailItem,
+  .requirementText,
+  .requirementListItem,
+  .collegesIntro,
+  .collegeName {
+    font-size: 1.5rem;
+  }
+
+  .detailIcon,
+  .collegeIcon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .mainTitle {
+    font-size: 2.4rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .requirementSubtitle {
+    font-size: 1.4rem;
+  }
+
+  .descriptionText,
+  .courseDetailText,
+  .detailLabel,
+  .courseDetailItem,
+  .requirementText,
+  .requirementListItem,
+  .collegesIntro,
+  .collegeName {
+    font-size: 1.2rem;
+  }
+
+  .detailIcon,
+  .collegeIcon {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,259 @@
+/* Main wrapper */
+.mainWrapper {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  
+}
+
+/* Header Section */
+.headerSection {
+  margin-bottom: 3rem;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headerTextContainer {
+  flex: 1;
+  padding: 1rem;
+}
+
+.mainTitle {
+  font-size: 3.4rem; 
+  color: #b91c1c;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.headerDescription {
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.8rem; /* 18px */
+  text-align: justify;
+}
+
+/* Courses Section */
+.coursesSection {
+  margin-bottom: 3rem;
+}
+
+.coursesContent {
+  width: 100%;
+}
+
+.coursesTitle {
+  font-size: 2.8rem; /* 28px */
+  color: #b91c1c;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.courseCard {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.courseCardTitle {
+  font-size: 2.4rem; /* 24px */
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.courseDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detailItem {
+  padding-bottom: 1rem;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.detailLabel {
+  font-size: 1.8rem; /* 18px */
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.detailText {
+  font-size: 1.6rem; /* 16px */
+  color: #333;
+  line-height: 1.6;
+}
+
+.highlightPrice {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.requirementsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirementItem {
+  font-size: 1.6rem; /* 16px */
+  color: #333;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.requirementItem::before {
+  content: "•";
+  color: #b91c1c;
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.subRequirement {
+  font-size: 1.4rem; /* 14px */
+  color: #333;
+  margin-bottom: 0.25rem;
+  position: relative;
+  padding-left: 2rem;
+  line-height: 1.5;
+}
+
+.subRequirement::before {
+  content: "◦";
+  color: #9ca3af;
+  position: absolute;
+  left: 1rem;
+  font-weight: 700;
+}
+
+.testName {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+  }
+
+  .mainWrapper{
+    padding: 1rem 1rem;
+  }
+
+  .mainTitle {
+    font-size: 2.6rem; 
+  }
+
+  .coursesTitle {
+    font-size: 2.4rem; 
+    text-align: center;
+  }
+
+  .courseCardTitle {
+    font-size: 2.2rem; /* 22px */
+  }
+
+  .detailLabel {
+    font-size: 1.6rem; /* 16px */
+  }
+
+  .detailText,
+  .requirementItem {
+    font-size: 1.5rem; /* 15px */
+  }
+
+  .subRequirement {
+    font-size: 1.3rem; /* 13px */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .mainWrapper{
+    padding: 1rem 1rem;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+ 
+  .mainTitle {
+    font-size: 3.6rem; /* 36px */
+  }
+
+  .coursesTitle {
+    font-size: 2.6rem; /* 26px */
+  }
+
+  .courseCardTitle {
+    font-size: 2.4rem; /* 24px */
+  }
+
+  .detailText,
+  .requirementItem {
+    font-size: 1.6rem; /* 16px */
+  }
+
+  .subRequirement {
+    font-size: 1.4rem; /* 14px */
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 100%;
+  }
+
+  .mainWrapper {
+    padding: 1rem 1rem;
+  }
+
+
+  .mainTitle {
+    font-size: 3.2rem; /* 32px */
+  }
+
+  .coursesTitle {
+    font-size: 2.4rem; /* 24px */
+  }
+
+  .courseCardTitle {
+    font-size: 2.2rem; /* 22px */
+  }
+
+  .detailText,
+  .requirementItem {
+    font-size: 1.5rem; /* 15px */
+  }
+
+  .subRequirement {
+    font-size: 1.4rem; /* 14px */
+  }
+}
+

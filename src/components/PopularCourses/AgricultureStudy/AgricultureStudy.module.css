@@ -1,0 +1,311 @@
+/* Base Styles: Desktop First */
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.mainContainer {
+  width: 80%;
+  margin: auto;
+}
+
+/* Header Section */
+.headerWrapper {
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.headerContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.headerTextDiv {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.mainTitle {
+  color: #c41e3a;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.headerDescription p {
+  margin-bottom: 1.2rem;
+  color: #333;
+  text-align: justify;
+  font-size: 1.9rem;
+  line-height: 1.7;
+}
+
+.headerImageDiv {
+  flex: 1 1 320px;
+  min-width: 280px;
+  text-align: center;
+}
+
+.headerImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Study Section */
+.whyStudyWrapper {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.reasonsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reasonItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.bulletPoint {
+  color: #c41e3a;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Requirements Section */
+.requirementsWrapper {
+  text-align: left;
+}
+
+.requirementsContent p {
+  font-size: 1.9rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Universities Section */
+.universitiesContent {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.universitiesIntro {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.universityList {
+  margin-bottom: 2rem;
+}
+
+.universityItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.universityName {
+  font-weight: 600;
+}
+
+/* Study Levels */
+.studyLevels {
+  margin-top: 1rem;
+}
+
+.studywrap {
+  margin-bottom: 1.5rem;
+}
+
+.subTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #c41e3a;
+}
+
+.requirementsList {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.requirementText {
+  margin-bottom: 1.8rem;
+  color: #333;
+  font-size: 1.9rem;
+  line-height: 1.6;
+}
+
+.requirementText strong {
+  color: #333;
+}
+
+/* =================== RESPONSIVE STYLES =================== */
+
+/* Medium Screens ≤ 1080px */
+@media (max-width: 1080px) {
+  .wrapper {
+    font-size: 17px;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.1rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+  }
+
+  .requirementText,
+  .headerDescription p,
+  .universityItem {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablets and Small Laptops ≤ 768px */
+@media (max-width: 768px) {
+  .wrapper {
+    font-size: 16px;
+    padding: 1.5rem 1rem;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .headerContent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .mainTitle {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .subTitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .headerDescription p,
+  .requirementText,
+  .universitiesIntro,
+  .universityItem {
+    font-size: 2rem;
+  }
+
+  .universitiesContent {
+    padding: 1.5rem;
+  }
+
+  .reasonItem {
+    font-size: 1.9rem;
+  }
+
+  .headerImageDiv{
+    flex: 1 1 310px;
+    min-width: 280px;
+}
+}
+
+/* Mobile Phones ≤ 420px */
+@media (max-width: 420px) {
+  .wrapper {
+    padding: 1rem 0.5rem;
+  }
+
+   .mainContainer {
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.3rem;
+  }
+
+  .subTitle {
+    font-size: 2.1rem;
+  }
+
+  .headerDescription p,
+  .requirementText,
+  .universitiesIntro,
+  .universityItem,
+  .reasonItem {
+    font-size: 1.8rem;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .universitiesContent {
+    padding: 1rem;
+  }
+
+   .headerImageDiv{
+    flex: 1 1 160px;
+    min-width: 280px;
+}
+}
+
+/* Focus Styles */
+.headerImage:focus,
+.reasonItem:focus,
+.universityItem:focus,
+.subTitle:focus {
+  outline: 2px solid #c41e3a;
+  outline-offset: 2px;
+}

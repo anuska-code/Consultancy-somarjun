@@ -31,6 +31,15 @@ import Objectives from './components/About/Objectives.jsx';
 import Albums from './components/About/Gallery/Albums.jsx';
 import VideoGallery from './components/About/Gallery/VideoGallery.jsx';
 import Galleriy from './pages/Aboutus/Galleriy/Galleriy.jsx';
+import IT from './pages/Popular-course/IT.JSX';
+import Agriculture from './pages/Popular-course/Agriculture.jsx';
+import MBA from './pages/Popular-course/MBA.jsx';
+import ArchitectureMain from './components/PopularCourses/ArchitectureGuide/ArchitectureMain.jsx';
+import Law from './pages/Popular-course/Law.jsx';
+import Science from './pages/Popular-course/Science.jsx';
+import Arts from './pages/Popular-course/Arts.jsx';
+
+
 
 
 
@@ -76,14 +85,14 @@ function App() {
           <Route path="visa-lodgement" element={<SAT />} /> */}
         </Route>
 
-        <Route path="/popular-courses" element={<PopularCourse />} >
-         {/* <Route path="IT" element={<PTE />} />
-          <Route path="Agriculture" element={<SAT />} />
-          <Route path="MBA" element={<SAT />} />
-          <Route path="Architecture" element={<IELTS />} />
-          <Route path="Law" element={<PTE />} />
-          <Route path="Pure-Sciences" element={<SAT />} />
-          <Route path="Arts" element={<SAT />} /> */}
+        <Route path="/courses" element={<PopularCourse />} >
+         <Route path="information-technology-australia" element={<IT/>} />
+          <Route path="agriculture-australia" element={<Agriculture/>} />
+          <Route path="mba-australia" element={<MBA/>} />
+          <Route path="architecture-australia" element={<ArchitectureMain/>} />
+          <Route path="law-australia" element={<Law/>} />
+          <Route path="applied-pure-sciences-australia" element={<Science/>} />
+          <Route path="arts-australia" element={<Arts/>} />
         </Route>
 
         <Route path="/blogs" element={<Blog />} />

@@ -40,18 +40,28 @@ const CardList = () => {
           visible: {},
         }}
       >
-        {data.map((item) => (
-          <motion.div
-            key={item.id}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.5 }}
-          >
-            <Card image={item.image} title={item.title} alt={item.alt} />
-          </motion.div>
-        ))}
+        {data.map((item) => {
+          // Map title to route
+          let to = "";
+          if (item.title.includes("UK")) to = "study-abroad/uk";
+          else if (item.title.includes("Canada")) to = "study-abroad/canada";
+          else if (item.title.includes("Australia")) to = "/study-abroad/australia";
+          else if (item.title.includes("New Zealand")) to = "/study-abroad/new-zealand";
+          else if (item.title.includes("USA")) to = "/study-abroad/usa";
+          else if (item.title.includes("Denmark")) to = "/study-abroad/denmark";
+          return (
+            <motion.div
+              key={item.id}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card image={item.image} title={item.title} alt={item.alt} to={to} />
+            </motion.div>
+          );
+        })}
       </motion.div>
     </motion.div>
   );
