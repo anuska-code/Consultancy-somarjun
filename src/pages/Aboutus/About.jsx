@@ -1,5 +1,6 @@
 import React from 'react';
-import ABoutFinal from '../../components/About/ABoutFinal';
+import ABoutFinal from '../../components/About/AboutFinal';
+
 
 
 

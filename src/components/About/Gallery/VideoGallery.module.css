@@ -1,0 +1,38 @@
+.galleryContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.videoCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 300px;
+}
+
+.videoTitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.videoPlayer {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+}
