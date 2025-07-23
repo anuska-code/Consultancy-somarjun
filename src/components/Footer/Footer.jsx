@@ -8,19 +8,18 @@ const Footer = () => {
     <div className={styles.footerWrapper}>
       <footer className={styles.footer}>
         <div className={styles.footerTop}>
-        
+
+          {/* Logo Section */}
           <div className={styles.logoSection}>
             <div className={styles.logoContainer}>
-              <div className={styles.logoBox}>
-                <span className={styles.logoH}>H</span>
-              </div>
+              {/* <img src="/images/Squared Logo 1 (1).svg" alt="Somarjun Tech Company logo" className={styles.logoImg} /> */}
               <div className={styles.logoText}>
-                <span className={styles.hardford}>Somarjun</span>
-                <span className={styles.education}>Tech Company</span>
+                <span className={styles.brandTitle}>SOMARJUN</span>
+                <span className={styles.brandSubtitle}>TECH COMPANY</span>
               </div>
             </div>
             <p className={styles.description}>
-           Somarjun Tech Company serves a wide range of clients, primarily focusing on business leveraging digital transformation through modern design, technology, and software solutions.
+              Somarjun Tech Company serves a wide range of clients, primarily focusing on business leveraging digital transformation through modern design, technology, and software solutions.
             </p>
           </div>
 
@@ -30,16 +29,16 @@ const Footer = () => {
               <h4 className={styles.sectionTitle}>Quick Links</h4>
               <div className={styles.quickLinksGrid}>
                 <ul className={styles.linksList}>
-                  <li><Link to="/test-preparation" className={styles.footerLink}>Test Preparation</Link></li>
-                  <li><Link to="/study-abroad" className={styles.footerLink}>Study Abroad</Link></li>
-                  <li><Link to="/services" className={styles.footerLink}>Services</Link></li>
+                  <li><Link to="/test-preparation/ielts" className={styles.footerLink}>Test Preparation</Link></li>
+                  <li><Link to="study-abroad/denmark" className={styles.footerLink}>Study Abroad</Link></li>
+                  <li><Link to="/services/student-screening" className={styles.footerLink}>Services</Link></li>
                   <li><Link to="/universities" className={styles.footerLink}>Universities</Link></li>
                 </ul>
                 <ul className={styles.linksList}>
-                  <li><Link to="/courses" className={styles.footerLink}>Popular Courses</Link></li>
+                  <li><Link to="/courses/information-technology-australia" className={styles.footerLink}>Popular Courses</Link></li>
                   <li><Link to="/blogs" className={styles.footerLink}>Blogs</Link></li>
-                  <li><Link to="/about" className={styles.footerLink}>About Us</Link></li>
-                  <li><Link to="/contact" className={styles.footerLink}>Contact Us</Link></li>
+                  <li><Link to="/about/introduction" className={styles.footerLink}>About Us</Link></li>
+                  <li><Link to="/contact/enquiry" className={styles.footerLink}>Contact Us</Link></li>
                 </ul>
               </div>
             </div>
@@ -50,12 +49,12 @@ const Footer = () => {
             <div className={styles.studyAbroadInner}>
               <h4 className={styles.sectionTitls}>Study Abroad</h4>
               <ul className={styles.linksList}>
+                <li><Link to="/study-abroad/uk" className={styles.footerLink}>Study in UK</Link></li>
+                <li><Link to="/study-abroad/canada" className={styles.footerLink}>Study in Canada</Link></li>
                 <li><Link to="/study-abroad/australia" className={styles.footerLink}>Study in Australia</Link></li>
                 <li><Link to="/study-abroad/usa" className={styles.footerLink}>Study in USA</Link></li>
-                <li><Link to="/study-abroad/japan" className={styles.footerLink}>Study in Japan</Link></li>
-                <li><Link to="/study-abroad/canada" className={styles.footerLink}>Study in Canada</Link></li>
                 <li><Link to="/study-abroad/new-zealand" className={styles.footerLink}>Study in New Zealand</Link></li>
-                <li><Link to="/study-abroad/uk" className={styles.footerLink}>Study in UK</Link></li>
+                <li><Link to="/study-abroad/denmark" className={styles.footerLink}>Study in Denmark</Link></li> 
               </ul>
             </div>
           </div>
@@ -82,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Test Preparation and Copyright */}
+        {/* Test Prep + Copyright */}
         <div className={styles.testCopyrightWrapper}>
           <div className={styles.testAndCopyrightBar}>
             <div className={styles.testLinks}>
@@ -97,7 +96,7 @@ const Footer = () => {
               <Link to="/test-preparation/nat" className={styles.testLink}>NAT</Link>
             </div>
             <div className={styles.copyrightText}>
-              © 2023 Hardford Education. All rights reserved. Powered by{' '}
+              © 2023 Somarjun. All rights reserved. Powered by{' '}
               <a href="#" className={styles.poweredByLink}>Cyclone Nepal Info Tech</a>
             </div>
           </div>

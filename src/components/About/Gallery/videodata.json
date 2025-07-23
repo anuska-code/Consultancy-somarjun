@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Mountain View",
+    "src": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+  },
+  {
+    "title": "Big Buck Bunny",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+  },
+  {
+    "title": "City Timelapse",
+    "src": "https://filesamples.com/samples/video/mp4/sample_640x360.mp4"
+  },
+  {
+    "title": "Elephants Dream",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+  },
+  {
+    "title": "For Bigger Blazes",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+  },
+  {
+    "title": "Subaru On Street",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+  },
+  {
+    "title": "We Are Going On Bull Run",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+  },
+  {
+    "title": "Volkswagen GTI Review",
+    "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+  }
+]

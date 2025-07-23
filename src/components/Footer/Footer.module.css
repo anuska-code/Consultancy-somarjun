@@ -1,15 +1,12 @@
-/* Footer.module.css */
 .footerWrapper {
   width: 100%;
-  /* margin:auto; */
   box-sizing: border-box;
   background-color: #f8f9fa;
-  /* margin-top: 20px; */
-  padding:2rem;
+  padding: 2rem;
 }
 
 .footer {
-  width:80%;
+  width: 80%;
   margin: auto;
   background-color: #f8f9fa;
   color: #333;
@@ -24,7 +21,7 @@
   flex-wrap: wrap;
 }
 
-/* Logo Section */
+/* === Logo Section === */
 .logoSection {
   flex: 0 0 25%;
 }
@@ -32,48 +29,47 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  gap: 6px;
+  /* margin-bottom: 15px; */
 }
 
-.logoBox {
-  width: 40px;
-  height: 40px;
-  background-color: #2c3e50;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 10px;
+.logoImg {
+  width: 65px;
+  height: 45px;
+  object-fit: contain;
 }
 
 .logoText {
   display: flex;
   flex-direction: column;
+  line-height: 1.2;
+  gap:4px;
 }
 
-.hardford {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
+.brandTitle {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
 }
 
-.education {
-  font-size: 14px;
-  line-height: 1;
+.brandSubtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #555;
 }
 
 .description {
-  font-size: 14px;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-top: 15px;
   text-align: justify;
+  color:#555;
 }
 
-/* Section wrappers */
+/* === Section Wrappers === */
 .quickLinksSection,
-.studyAbroadSection,
+/* .studyAbroadSection, */
 .contactSection {
   flex: 0 0 20%;
 }
@@ -84,9 +80,9 @@
   width: 100%;
 }
 
-/* Titles */
+/* === Section Titles === */
 .sectionTitle {
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #2c3e50;
@@ -95,7 +91,7 @@
 }
 
 .sectionTitls {
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #2c3e50;
@@ -103,12 +99,12 @@
   text-align: left;
 }
 
-/* Links Grid */
+/* === Links Grid === */
 .quickLinksGrid {
   display: flex;
-  gap: 0px;
+  gap: 2rem;
   justify-content: space-between;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .linksList {
@@ -124,7 +120,7 @@
 .footerLink {
   color: #555;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.5rem;
   transition: color 0.3s;
 }
 
@@ -132,7 +128,7 @@
   color: #2c3e50;
 }
 
-/* Contact */
+/* === Contact Info === */
 .contactInfo {
   display: flex;
   flex-direction: column;
@@ -143,7 +139,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 14px;
+  font-size: 1.5rem;
 }
 
 .contactIcon {
@@ -161,11 +157,10 @@
   color: #2c3e50;
 }
 
-/* Test + Copyright */
+/* === Test + Copyright === */
 .testCopyrightWrapper {
   width: 100%;
   background-color: white;
-  /* padding: 12px 0px; */
 }
 
 .testAndCopyrightBar {
@@ -180,14 +175,8 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  font-size: 14px;
+  font-size: 1.5rem;
   font-weight: bold;
-}
-
-.copyrightText {
-  color: white;
-  font-size: 12px;
-  margin: 0;
 }
 
 .testLink {
@@ -195,8 +184,8 @@
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px;
-  padding:0 1rem;
+  font-size: 1.5rem;
+  padding: 0 1rem;
 }
 
 .separator {
@@ -205,7 +194,7 @@
 
 .copyrightText {
   color: black;
-  font-size: 12px;
+  font-size: 1.1rem;
   margin: 0;
 }
 
@@ -214,14 +203,19 @@
   text-decoration: none;
 }
 
-/* Responsive Styles */
+/* === Responsive Styles === */
 @media (max-width: 1080px) {
   .footer {
     width: 100%;
-    
   }
-}
 
+  .quickLinksGrid {
+  display: flex;
+  gap: 7rem;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+}
 
 @media (max-width: 768px) {
   .footer {
@@ -233,7 +227,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
   }
 
   .logoSection,
@@ -242,7 +236,7 @@
   .contactSection {
     flex: 1;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 
   .logoContainer {
@@ -269,15 +263,12 @@
   .sectionTitle,
   .sectionTitls {
     text-align: left;
-   
     margin-bottom: 10px;
   }
 
   .contactInfo {
     gap: 10px;
   }
-
-  
 
   .testAndCopyrightBar {
     flex-direction: column;
@@ -296,5 +287,7 @@
     padding: 0;
   }
 
-  
+  .description{
+    margin-top: 1rem;
+  }
 }

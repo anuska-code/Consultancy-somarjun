@@ -9,7 +9,7 @@
 .container{
   width: 80%;
   margin:auto;
-  padding: 2rem 2rem;
+  /* padding: 2rem 2rem; */
 }
 
 .sectionWrapper {
@@ -25,6 +25,7 @@
 .textContainer {
   flex: 1;
   color: #1a1a1a;
+  padding:5rem;
 }
 
 .textContainer h2 {
@@ -37,22 +38,23 @@
 .textContainer p {
   line-height: 1.6;
   color: #333;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: justify;
 }
 
 .imageContainer {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .imageContainer img {
-  width: 100%;
-  max-width: 400px;
+ width:100%;
+  max-width: 420px;
   height: auto;
   border-radius: 1rem;
+  padding:5rem;
 }
 
 /* Responsive */

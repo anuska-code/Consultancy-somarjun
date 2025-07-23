@@ -1,0 +1,251 @@
+.reviewSection {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  height: 50vh;
+}
+
+.reviewContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.headerWrapper {
+  margin-bottom: 1rem;
+}
+
+.headerText {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.titleWrapper {
+  margin-bottom: 5rem;
+}
+
+.titleText {
+  text-align: center;
+  color: #d32f2f;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.optionsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.optionsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.reviewOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.platformWrapper {
+  margin-bottom: 2.5rem;
+}
+
+.platformText {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.qrWrapper {
+  margin-bottom: 2rem;
+}
+
+.qrCodeContainer {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  background: white;
+  
+
+}
+
+/* ✅ New Image Style */
+.qrCodeImage {
+  width: 13rem;
+  height: 13rem;
+  object-fit: contain;
+  border-radius: 0.6rem;
+  border: 1px solid #ccc;
+}
+
+/* Remove this if you no longer use background SVG dummy */
+.qrCodePlaceholder {
+  display: none;
+}
+
+.scanWrapper {
+  margin-bottom: 2rem;
+}
+
+.scanText {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reviewButton {
+  background-color: #e8e8e8;
+  color: #555;
+  border: none;
+  padding: 1.4rem 2.4rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 20rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.reviewButton:hover {
+  background-color: #d32f2f;
+  color: white;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(211, 47, 47, 0.3);
+}
+
+.reviewButton:focus {
+  box-shadow: 0 0 0 0.3rem rgba(211, 47, 47, 0.2);
+}
+
+.reviewButton:active {
+  transform: translateY(0);
+}
+
+/* Tablet Styles */
+@media (max-width: 1080px) {
+  .reviewContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewContainer {
+    width: 100%;
+  }
+
+  .optionsContainer {
+    gap: 4rem;
+  }
+
+  .reviewOption {
+    max-width: 28rem;
+  }
+
+  .titleText {
+    font-size: 3.6rem;
+  }
+
+  .headerText {
+    font-size: 2rem;
+  }
+
+  .platformText {
+    font-size: 1.6rem;
+  }
+
+  .qrCodeContainer {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .qrCodeImage {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .scanText {
+    font-size: 1.4rem;
+  }
+
+  .reviewButton {
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+    min-width: 18rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .reviewSection {
+    padding: 4rem 1rem;
+  }
+
+  .reviewContainer {
+    width: 100%;
+  }
+
+  .optionsContainer {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .reviewOption {
+    max-width: 100%;
+  }
+
+  .titleText {
+    font-size: 3.2rem;
+  }
+
+  .headerText {
+    font-size: 1.8rem;
+  }
+
+  .platformText {
+    font-size: 1.5rem;
+  }
+
+  .qrCodeContainer {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .qrCodeImage {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .scanText {
+    font-size: 1.3rem;
+  }
+
+  .reviewButton {
+    font-size: 1.2rem;
+    padding: 1.1rem 1.8rem;
+    min-width: 16rem;
+  }
+}

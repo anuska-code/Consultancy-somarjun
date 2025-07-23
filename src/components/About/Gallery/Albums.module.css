@@ -1,6 +1,8 @@
 .Wrapper {
   width: 100%;
+  padding: 2rem 1rem;
   box-sizing: border-box;
+  background-color: #f9f9f9;
 }
 
 .container {
@@ -9,73 +11,72 @@
   padding: 1rem;
 }
 
-
-
-
 .heading {
-    margin-top:15px;
+  margin-top: 1rem;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
+  color: #333;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .card {
+  background-color: #fff;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   text-align: center;
+  transition: transform 0.3s ease;
+  flex: 1 1 220px;
+  max-width: 280px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .image {
-  width: 130px;
-  height: 120px;
+  width: 100%;
+  height: 180px;
   object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto;
+  border-radius: 0.75rem;
   display: block;
 }
 
 .caption {
-    font-size: 1.5rem;
-  text-align: center;
-  margin-top: 0.75rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #555;
 }
 
-/* Medium screens (tablets, smaller laptops) */
-@media (max-width: 1080px) {
-  .container {
-    width: 100%;
-  }
-  
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Small screens (phones) */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
+  .heading {
+    font-size: 2rem;
   }
-  
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
+
+  .image {
+    height: 160px;
   }
 }
 
-/* Extra small screens */
-@media (max-width: 420px) {
-  .container {
-    width: 100%;
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
   }
-  
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
+
+  .image {
+    height: 140px;
+  }
+
+  .caption {
+    font-size: 1rem;
   }
 }

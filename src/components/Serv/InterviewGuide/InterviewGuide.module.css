@@ -1,0 +1,104 @@
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 4rem 3rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSection {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.active {
+  font-weight: 600;
+  color: #000;
+}
+
+.textSection {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.listSection {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-left: 1.8rem;
+  margin-bottom: 2rem;
+  list-style-type: decimal;
+}
+
+.paragraphSection {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.finalText {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.contact {
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 3rem 1.5rem;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .textSection,
+  .listSection,
+  .paragraphSection {
+    font-size: 1.5rem;
+  }
+
+  .breadcrumb {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 100%;
+  }
+}

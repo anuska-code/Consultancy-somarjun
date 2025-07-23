@@ -30,6 +30,7 @@
 
 .topTextBlock {
   flex: 1 1 60%;
+  text-align: justify;
 }
 
 .topTextInner p {
@@ -37,6 +38,7 @@
   line-height: 1.6;
   margin-bottom: 15px;
   color: #333;
+    text-align: justify;
 }
 
 .highlight {
@@ -45,7 +47,7 @@
 }
 
 .imageBlock {
-  flex: 1 1 35%;
+  flex: 1 1 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +103,7 @@
 
 .factsList li {
   margin-bottom: 12px;
+    text-align: justify;
 }
 
 /* Reasons Section - Two Columns */
@@ -118,7 +121,7 @@
   color: #222;
   margin-bottom: 30px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .reasonsColumns {
@@ -172,14 +175,16 @@
   .topTextBlock,
   .imageBlock {
     flex: 1 1 100%;
+    padding:2rem;
   }
 
-  .studyImage {
+  /* .studyImage {
     max-width: 90%;
-  }
+  } */
 
   .factsGrid {
     flex-direction: row;
+    padding:1rem;
   }
 
   .factsColumn {

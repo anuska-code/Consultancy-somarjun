@@ -23,7 +23,7 @@
 }
 
 .textDiv h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
   color: #2c3e50;
@@ -36,13 +36,14 @@
 .partWrapper h2 {
   margin-bottom: 0.5rem;
   color: #34495e;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .partWrapper p {
   color: #444;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .imageDiv {

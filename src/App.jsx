@@ -8,9 +8,7 @@ import IELTS from "./pages/TestsPreparation/IELTS.jsx";
 import PTE from "./pages/TestsPreparation/PTE.jsx";
 import SAT from "./pages/TestsPreparation/SAT.jsx";
 import Universities from "./pages/Universities/Universities.jsx";
-import Serviceus from "./pages/Serviceus/Content.jsx";
 import PopularCourse from "./pages/Popular-course/Courses.jsx";
-
 import Reviews from "./pages/Reviews/Review.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Austraila from "./pages/Study-abroad/Austraila.jsx";
@@ -28,7 +26,6 @@ import Introduction from "./components/About/Introduction.jsx";
 import Aboutus from "./pages/Aboutus/Aboutus.jsx";
 import Objectives from "./components/About/Objectives.jsx";
 import Albums from "./components/About/Gallery/Albums.jsx";
-import Galleriy from "./pages/Aboutus/Galleriy/Galleriy.jsx";
 import IT from "./pages/Popular-course/IT.jsx";
 import Agriculture from "./pages/Popular-course/Agriculture.jsx";
 import MBA from "./pages/Popular-course/MBA.jsx";
@@ -37,6 +34,13 @@ import Law from "./pages/Popular-course/Law.jsx";
 import Science from "./pages/Popular-course/Science.jsx";
 import Arts from "./pages/Popular-course/Arts.jsx";
 import VideoGallery from "./components/About/Gallery/VideoGallery.jsx";
+import Interview from "./pages/Serviceus/Interview.jsx";
+import Service from "./pages/Serviceus/Service.jsx";
+import Doc from "./pages/Serviceus/Doc.jsx";
+import Accounts from "./pages/Serviceus/Accounts.jsx";
+import Screen from "./pages/Serviceus/Screen.jsx";
+import UniApp from "./pages/Serviceus/UniApp.jsx";
+
 
 function App() {
   return (
@@ -64,18 +68,12 @@ function App() {
 
         <Route path="/universities" element={<Universities />} />
 
-        <Route path="/services" element={<Serviceus />}>
-          {/* <Route path="screening" element={<IELTS />} />
-          <Route path="application" element={<PTE />} />
-          <Route path="documentation" element={<SAT />} />
-          <Route path="interview" element={<IELTS />} />
-          <Route path="scholarship" element={<PTE />} />
-          <Route path="visa-declaration" element={<SAT />} />
-          <Route path="offer-letter" element={<SAT />} />
-          <Route path="letter-confirmation" element={<IELTS />} />
-          <Route path="counseling" element={<PTE />} />
-          <Route path="pre-departure" element={<SAT />} />
-          <Route path="visa-lodgement" element={<SAT />} /> */}
+        <Route path="/services" element={<Service/>}>
+          <Route path="student-screening" element={<Screen/>} />
+          <Route path="university-application" element={<UniApp/>} />
+          <Route path="documentation" element={<Doc/>} />
+          <Route path="interview-assistance" element={<Interview/>} />
+          <Route path="accounts" element={<Accounts/>} />
         </Route>
 
         <Route path="/courses" element={<PopularCourse />}>

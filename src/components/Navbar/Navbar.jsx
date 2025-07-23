@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import { FaPhoneAlt, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import {
-  FaWhatsapp,
-  FaViber,
-  FaTwitter,
-  FaYoutube,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
+  FaWhatsappSquare,
+  FaInstagramSquare,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaYoutubeSquare,
+  FaPhoneSquareAlt, // Used as a visual alternative for Viber
 } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 
 
@@ -96,15 +97,16 @@ const Navbar = () => {
   </div>
 </div>
 
-          <div className={styles.topRight}>
-            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-            <a href="https://www.viber.com" target="_blank" rel="noopener noreferrer"><FaViber /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          </div>
+<div className={styles.topRight}>
+  <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FaWhatsappSquare /></a>
+  <a href="https://www.viber.com" target="_blank" rel="noopener noreferrer"><FaPhoneSquareAlt /></a> {/* Alternative to ViberSquare */}
+  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitterSquare /></a>
+  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FaYoutubeSquare /></a>
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebookSquare /></a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a>
+</div>
+
         </div>
       </div>
 
@@ -166,12 +168,7 @@ const Navbar = () => {
                     <li><Link to="/services/university-application" onClick={handleMenuClick}>University Application Assistance</Link></li>
                     <li><Link to="/services/documentation" onClick={handleMenuClick}>Documentation Guidance</Link></li>
                     <li><Link to="/services/interview-assistance" onClick={handleMenuClick}>Interview Assistance</Link></li>
-                    <li><Link to="/services/scholarship" onClick={handleMenuClick}>Scholarship Assistance</Link></li>
-                    <li><Link to="/services/visa-declaration" onClick={handleMenuClick}>Student Visa Declaration Form</Link></li>
-                    <li><Link to="/services/offer-confirmation" onClick={handleMenuClick}>I-20/Offer Letter Confirmation</Link></li>
-                    <li><Link to="/services/counseling" onClick={handleMenuClick}>Counseling</Link></li>
-                    <li><Link to="/services/pre-departure" onClick={handleMenuClick}>Pre Departure Briefing</Link></li>
-                    <li><Link to="/services/visa-lodgement" onClick={handleMenuClick}>VISA Lodgement</Link></li>
+                    <li><Link to="/services/accounts" onClick={handleMenuClick}>Accounting</Link></li>
                   </ul>
                 )}
               </li>
