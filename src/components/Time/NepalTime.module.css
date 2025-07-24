@@ -4,14 +4,16 @@
   align-items: center;
   justify-content: flex-end;
   background-color: transparent;
+  
 }
 
 .card {
   position: relative;
   border-radius: 1rem;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   max-width: 24rem;
   width: 100%;
+  /* bottom:10rem; */
 }
 
 /* Header */

@@ -5,9 +5,13 @@ import styles from './Hero.module.css';
 import CardList from '../HeroCard/CardList'; // Adjust the path as necessary
 import { motion } from 'framer-motion';
 import TimeMain from '../Time/TimeMain';
+import SliderMain from '../Slider/SliderMain';
+
 
 const Hero = () => {
-  return (
+  return (<>
+
+    <SliderMain/>
     <div className={styles.homepageWrapper}>
       {/* Hero Section */}
       <section className={styles.heroSection}>
@@ -87,10 +91,13 @@ const Hero = () => {
       
 
       <CardList />
+    
       <div className={styles.timeWidgetContainer}>
+  
   <TimeMain />
 </div>
-    </div>
+  </div>
+    </>
   );
 };
 

@@ -80,21 +80,25 @@
   height: 2rem;
 }
 
-button {
+/* Style for the submit button, added class in JSX */
+.submitButton {
   padding: 1rem 2rem;
   font-size: 1.6rem;
   background-color: #1a1a1a;
   color: white;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submitButton:hover:not(:disabled) {
+  background-color: #333;
 }
 
-/* ✅ Updated styles for phone input to match other fields */
+/* Phone input styles */
 .phoneContainer {
   width: 100% !important;
 }
 
-/* Target all possible phone input classes */
 .phoneContainer .react-tel-input {
   width: 100% !important;
   height: auto !important;
@@ -119,50 +123,25 @@ button {
   min-height: 50px !important;
 }
 
-/* Additional override for the phone input container */
 .phoneContainer .react-tel-input .flag-dropdown .selected-flag {
   height: auto !important;
   min-height: 50px !important;
   padding: 1rem 0.5rem !important;
 }
 
-/* Global override - more aggressive approach */
-.react-tel-input {
-  width: 100% !important;
+/* Responsive styles */
+@media (max-width: 1080px) {
+  .contactInner {
+    width: 100%;
+  }
 }
 
-.react-tel-input .form-control {
-  padding: 1rem !important;
-  font-size: 1.6rem !important;
-  width: 100% !important;
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  box-sizing: border-box !important;
-  height: auto !important;
-  min-height: 50px !important;
-}
-
-.react-tel-input .flag-dropdown {
-  border: 1px solid #ccc !important;
-  border-radius: 4px 0 0 4px !important;
-  background-color: #fff !important;
-  height: auto !important;
-  min-height: 50px !important;
-}
-
-.react-tel-input .flag-dropdown .selected-flag {
-  height: auto !important;
-  min-height: 50px !important;
-  padding: 1rem 0.5rem !important;
-}
-
-/* Responsive: Mobile screens up to 768px */
 @media (max-width: 768px) {
   .contactInner {
     flex-direction: column-reverse;
     width: 100%;
   }
-  
+
   .formSection,
   .mapSection {
     width: 100%;
@@ -172,12 +151,6 @@ button {
 }
 
 @media (max-width: 420px) {
-  .contactInner {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1080px) {
   .contactInner {
     width: 100%;
   }

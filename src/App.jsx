@@ -40,11 +40,18 @@ import Doc from "./pages/Serviceus/Doc.jsx";
 import Accounts from "./pages/Serviceus/Accounts.jsx";
 import Screen from "./pages/Serviceus/Screen.jsx";
 import UniApp from "./pages/Serviceus/UniApp.jsx";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
+
+
 
 
 function App() {
   return (
     <Router>
+     
+      <ScrollToTop/>
+     
+     
       <Navbar />
 
       <Routes>
@@ -103,7 +110,9 @@ function App() {
         <Route path="/review" element={<Reviews />} />
       </Routes>
       <Footer />
+     
     </Router>
+    
   );
 }
 

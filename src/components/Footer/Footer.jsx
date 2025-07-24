@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ScrollToggleButton from '../ScrollToTop/ScrollToggleButton';
 
 const Footer = () => {
   return (
@@ -11,13 +12,14 @@ const Footer = () => {
 
           {/* Logo Section */}
           <div className={styles.logoSection}>
-            <div className={styles.logoContainer}>
-              {/* <img src="/images/Squared Logo 1 (1).svg" alt="Somarjun Tech Company logo" className={styles.logoImg} /> */}
-              <div className={styles.logoText}>
-                <span className={styles.brandTitle}>SOMARJUN</span>
-                <span className={styles.brandSubtitle}>TECH COMPANY</span>
-              </div>
-            </div>
+           <div className={styles.logoContainer}>
+  <img 
+    src="\images\Squared Logo 1 (2).svg" 
+    alt="Somarjun Tech Company logo" 
+    className={styles.logoImg} 
+  />
+</div>
+
             <p className={styles.description}>
               Somarjun Tech Company serves a wide range of clients, primarily focusing on business leveraging digital transformation through modern design, technology, and software solutions.
             </p>
@@ -101,6 +103,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <ScrollToggleButton/>
       </footer>
     </div>
   );

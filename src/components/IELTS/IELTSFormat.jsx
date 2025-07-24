@@ -13,14 +13,14 @@ const IELTSFormat = () => {
           className={styles.ieltsFormat}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
         >
           {/* Heading */}
           <motion.div
             className={styles.text}
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.5 }}
           >
             <h2 className={styles.heading}>Format of the IELTS Test</h2>
           </motion.div>
@@ -30,7 +30,7 @@ const IELTSFormat = () => {
             className={styles.contentWrapper}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
             {/* Left Image */}
@@ -38,7 +38,7 @@ const IELTSFormat = () => {
               className={styles.imageContainer}
               initial={{ x: -40, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
               <img
@@ -53,7 +53,7 @@ const IELTSFormat = () => {
               className={styles.buttonContainer}
               initial={{ x: 40, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
               {sections.map((section, index) => (
@@ -62,7 +62,7 @@ const IELTSFormat = () => {
                   className={styles.button}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  transition={{ duration: 0.15, delay: index * 0.05 }}
                   viewport={{ once: true }}
                 >
                   <div className={styles.leftIcon}>

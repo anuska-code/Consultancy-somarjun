@@ -77,30 +77,34 @@ const Contactus = () => {
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           className={styles.formSection}
         >
           <Formik initialValues={initialValues} validate={validate} onSubmit={handleSubmit}>
             {({ setFieldValue, values, isSubmitting }) => (
               <Form className={styles.contactForm} noValidate>
+                {/* First Name */}
                 <div className={styles.inputGroup}>
                   <label htmlFor="firstName" className={styles.label}>First Name</label>
                   <Field id="firstName" name="firstName" placeholder="Enter your First Name" />
                   <ErrorMessage name="firstName" component="div" className={styles.errorMsg} />
                 </div>
 
+                {/* Last Name */}
                 <div className={styles.inputGroup}>
                   <label htmlFor="lastName" className={styles.label}>Last Name</label>
                   <Field id="lastName" name="lastName" placeholder="Enter your Last Name" />
                   <ErrorMessage name="lastName" component="div" className={styles.errorMsg} />
                 </div>
 
+                {/* Email */}
                 <div className={styles.inputGroup}>
                   <label htmlFor="email" className={styles.label}>Email</label>
                   <Field id="email" type="email" name="email" placeholder="Enter your Email" />
                   <ErrorMessage name="email" component="div" className={styles.errorMsg} />
                 </div>
 
+                {/* Mobile Number */}
                 <div className={styles.inputGroup}>
                   <label className={styles.label}>Mobile Number</label>
                   <PhoneInput
@@ -112,28 +116,11 @@ const Contactus = () => {
                       required: true,
                     }}
                     containerClass={styles.phoneContainer}
-                    inputStyle={{
-                      width: '100%',
-                      height: '50px',
-                      fontSize: '1.6rem',
-                      padding: '1rem',
-                      border: '1px solid #ccc',
-                      borderRadius: '4px',
-                      boxSizing: 'border-box'
-                    }}
-                    buttonStyle={{
-                      height: '50px',
-                      border: '1px solid #ccc',
-                      borderRadius: '4px 0 0 4px',
-                      backgroundColor: '#fff'
-                    }}
-                    containerStyle={{
-                      width: '100%'
-                    }}
                   />
                   <ErrorMessage name="mobileNumber" component="div" className={styles.errorMsg} />
                 </div>
 
+                {/* Inquiry Type */}
                 <div className={styles.inputGroup}>
                   <label className={styles.label}>Inquiry Type</label>
                   <Field as="select" name="inquiryType">
@@ -146,6 +133,7 @@ const Contactus = () => {
                   <ErrorMessage name="inquiryType" component="div" className={styles.errorMsg} />
                 </div>
 
+                {/* Contact Method */}
                 <div className={styles.inputGroup}>
                   <label className={styles.label}>Preferred Contact Method</label>
                   <Field as="select" name="contactMethod">
@@ -156,6 +144,7 @@ const Contactus = () => {
                   <ErrorMessage name="contactMethod" component="div" className={styles.errorMsg} />
                 </div>
 
+                {/* Inquiry Date */}
                 <div className={styles.inputGroup}>
                   <label className={styles.label}>Inquiry Date</label>
                   <Field
@@ -165,6 +154,7 @@ const Contactus = () => {
                   />
                 </div>
 
+                {/* Recaptcha */}
                 <div className={styles.recaptchaBox}>
                   <input type="checkbox" ref={recaptchaRef} />
                   <span>I'm not a robot</span>
@@ -175,7 +165,8 @@ const Contactus = () => {
                   />
                 </div>
 
-                <button type="submit" disabled={isSubmitting}>
+                {/* Submit Button */}
+                <button type="submit" disabled={isSubmitting} className={styles.submitButton}>
                   {isSubmitting ? 'Submitting...' : 'Submit'}
                 </button>
               </Form>
@@ -192,7 +183,7 @@ const Contactus = () => {
         >
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.8128005059891!2d83.45694751658354!3d27.686953496336216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687a4a85ecaad%3A0x73af8e318f202fe7!2sNabin%20Audhyogik%20kadar%20bahadur%20Rita%20secondary%20school!5e0!3m2!1sen!2snp!4v1751959959375!5m2!1sen!2snp" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.8128005059891!2d83.45694751658354!3d27.686953496336216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687a4a85ecaad%3A0x73af8e318f202fe7!2sNabin%20Audhyogik%20kadar%20bahadur%20Rita%20secondary%20school!5e0!3m2!1sen!2snp!4v1751959959375!5m2!1sen!2snp"
             width="100%"
             height="100%"
             allowFullScreen=""

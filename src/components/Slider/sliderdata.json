@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "image": "/images/slider.png",
+    "title": "Slide One"
+  },
+  {
+    "id": 2,
+    "image": "/images/admissions.png",
+    "title": "Slide Two"
+  },
+  {
+    "id": 3,
+    "image": "/images/artictecture.webp",
+    "title": "Slide Three"
+  },
+  {
+    "id": 4,
+    "image": "/images/Accounts.png",
+    "title": "Slide Four"
+  },
+  {
+    "id": 5,
+    "image": "/images/admissions.png",
+    "title": "Slide Five"
+  },
+  {
+    "id": 6,
+    "image": "/images/artictecture.webp",
+    "title": "Slide Six"
+  },
+  {
+    "id": 7,
+    "image": "/images/Accounts.png",
+    "title": "Slide Seven"
+  },
+  {
+    "id": 8,
+    "image": "/images/admissions.png",
+    "title": "Slide Eight"
+  },
+  {
+    "id": 9,
+    "image": "/images/artictecture.webp",
+    "title": "Slide Nine"
+  },
+  {
+    "id": 10,
+    "image": "/images/Accounts.png",
+    "title": "Slide Ten"
+  }
+]

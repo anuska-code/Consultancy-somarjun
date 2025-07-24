@@ -1,10 +1,13 @@
 import React from 'react'
-import Institutions from './Institutions'
+import Institution from './Institution'
+// import Institutions from './Institutions'
 
 const UniversityMain = () => {
   return (
     <>
-    <Institutions/>
+    {/* <Institutions/> */}
+
+    <Institution/>
     </>
   )
 }

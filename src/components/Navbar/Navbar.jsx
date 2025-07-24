@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import { FaPhoneAlt, FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
 import {
-  FaWhatsappSquare,
-  FaInstagramSquare,
-  FaFacebookSquare,
-  FaLinkedin,
-  FaTwitterSquare,
-  FaYoutubeSquare,
-  FaPhoneSquareAlt, // Used as a visual alternative for Viber
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+  FaViber,
 } from 'react-icons/fa';
 
 import { Link } from 'react-router-dom';
-
-
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -71,42 +69,56 @@ const Navbar = () => {
     }
   };
 
-  
-
   return (
     <>
       {/* 🔝 TOP BAR */}
       <div className={styles.topBar}>
         <div className={styles.topWrapper}>
-<div className={styles.topLeft}>
-  <div className={styles.contactGroups}>
-    <span>
-      <FaGlobe />
-      <a
-        href="mailto:info@thenext.edu.np"
-        style={{ color: 'inherit', textDecoration: 'none' }}
-      >
-        info@thenext.edu.np
-      </a>
-    </span>
-  </div>
-  <div className={styles.contactGroup}>
-    <span>
-      <FaPhoneAlt /> +977–01–5970268
-    </span>
-  </div>
-</div>
+          <div className={styles.topLeft}>
+            <div className={styles.contactGroup}>
+              <span className={styles.contactItem}>
+                <FaPhoneAlt className={styles.contactIcon} />
+                +977–01–5970268
+              </span>
+            </div>
+            <div className={styles.contactGroup}>
+              <span className={styles.contactItem}>
+                <FaGlobe className={styles.contactIcon} />
+                <a
+                  href="mailto:info@thenext.edu.np"
+                  className={styles.emailLink}
+                >
+                  info@thenext.edu.np
+                </a>
+              </span>
+            </div>
+          </div>
 
-<div className={styles.topRight}>
-  <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FaWhatsappSquare /></a>
-  <a href="https://www.viber.com" target="_blank" rel="noopener noreferrer"><FaPhoneSquareAlt /></a> {/* Alternative to ViberSquare */}
-  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitterSquare /></a>
-  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FaYoutubeSquare /></a>
-  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebookSquare /></a>
-  <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagramSquare /></a>
-</div>
-
+          <div className={styles.topRight}>
+            <div className={styles.socialIcons}>
+              <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaWhatsapp />
+              </a>
+              <a href="https://www.viber.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaViber />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaTwitter />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaYoutube />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaFacebookF />
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaLinkedinIn />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -116,7 +128,6 @@ const Navbar = () => {
           <div className={styles.logoBox}>
             <Link to="/" className={styles.logoLink} onClick={handleMenuClick}>
               <img src="\images\Squared Logo 1 (1).svg" alt="logo" className={styles.logoImg} />
-             
             </Link>
           </div>
 

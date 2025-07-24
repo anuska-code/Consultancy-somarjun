@@ -1,0 +1,71 @@
+.scrollButtonContainer {
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Position for top arrow (e.g., ScrollToBottomButton) */
+.topPosition {
+  top: 1rem;
+  left: 1rem;
+  bottom: auto;
+}
+
+/* Position for bottom arrow (e.g., ScrollToTopButton) */
+.bottomPosition {
+  bottom: 1rem;
+  left: 1rem;
+  top: auto;
+}
+
+.scrollButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.scrollBtn {
+  width: 30px;
+  height: 45px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: perspective(1px) translateZ(0);
+}
+
+.scrollTopBtn {
+  background-color: #28a745; /* Green for scroll to bottom */
+}
+
+.scrollBottomBtn {
+  background-color: #dc3545; /* Red for scroll to top */
+}
+
+.scrollBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease-in-out;
+}
+
+.scrollIcon {
+  font-size: 1.5rem;
+}
+
+/* Subtle animation on hover */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

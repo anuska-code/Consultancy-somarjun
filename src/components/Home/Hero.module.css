@@ -10,6 +10,7 @@
 .heroSection {
   width: 80%;
   margin: auto;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0rem 3rem 2rem;
@@ -22,7 +23,7 @@
 }
 
 .heroText h1 {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -30,7 +31,7 @@
 .heroText p {
   text-align: justify;
   margin-top: 15px;
-  font-size: 2.4rem;
+  font-size: 3.4rem;
   color: #555;
 }
 
@@ -55,19 +56,21 @@
 .contactBtn {
   background-color: #d62828;
   color: white;
-  padding: 10px 25px;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 .applyBtn {
   background: none;
   border: 1px solid #d62828;
   color: #d62828;
-  padding: 10px 25px;
+  padding: 1rem 2rem;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 /* ===================== Hero Image ===================== */

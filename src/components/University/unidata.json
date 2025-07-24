@@ -1,0 +1,161 @@
+[
+  {
+    "country": "CANADA",
+    "institutions": [
+      {
+        "title": "Royal Roads University",
+        "image": "/images/CollegeImg/royal.png",
+        "link": "https://www.royalroads.ca/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "Suncrest College",
+        "image": "/images/CollegeImg/sun.png",
+        "link": "https://www.suncrestcollege.ca/",
+        "icon": "FaSchool"
+      },
+      {
+        "title": "Capilano University",
+        "image": "/images/CollegeImg/cap.png",
+        "link": "https://www.capilanou.ca/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "Trinity Western University",
+        "image": "/images/CollegeImg/trininty.png",
+        "link": "https://www.twu.ca/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "Georgian College",
+        "image": "/images/CollegeImg/geor.png",
+        "link": "https://www.georgiancollege.ca/",
+        "icon": "MdSchool"
+      },
+      {
+        "title": "Centennial College",
+        "image": "/images/CollegeImg/last.png",
+        "link": "https://www.centennialcollege.ca/",
+        "icon": "FaSchool"
+      },
+      {
+        "title": "Durham College",
+        "image": "/images/CollegeImg/dc.png",
+        "link": "https://durhamcollege.ca/",
+        "icon": "MdSchool"
+      },
+      {
+        "title": "Niagara College",
+        "image": "/images/CollegeImg/nig.png",
+        "link": "https://www.niagaracollege.ca/",
+        "icon": "FaSchool"
+      }
+    ]
+  },
+  {
+    "country": "NEW ZEALAND",
+    "institutions": [
+      {
+        "title": "Study Group",
+        "image": "/images/CollegeImg/Newzeland/f.png",
+        "link": "https://www.studygroup.com/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "West Coast Polytechnic",
+        "image": "/images/CollegeImg/Newzeland/s.png",
+        "link": "https://www.tpp.ac.nz/",
+        "icon": "MdSchool"
+      },
+      {
+        "title": "Unitec",
+        "image": "/images/CollegeImg/Newzeland/t.png",
+        "link": "https://www.unitec.ac.nz/",
+        "icon": "FaSchool"
+      },
+      {
+        "title": "UCOL",
+        "image": "/images/CollegeImg/Newzeland/fourth.png",
+        "link": "https://www.ucol.ac.nz/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "Toi Ohomai",
+        "image": "/images/CollegeImg/Newzeland/fifth.png",
+        "link": "https://www.toiohomai.ac.nz/",
+        "icon": "FaGraduationCap"
+      },
+      {
+        "title": "NorthTec",
+        "image": "/images/CollegeImg/Newzeland/sixth.png",
+        "link": "https://www.northtec.ac.nz/",
+        "icon": "FaSchool"
+      },
+      {
+        "title": "NMIT",
+        "image": "/images/CollegeImg/Newzeland/seven.png",
+        "link": "https://www.nmit.ac.nz/",
+        "icon": "MdSchool"
+      },
+      {
+        "title": "Massey University",
+        "image": "/images/CollegeImg/Newzeland/eight.png",
+        "link": "https://www.massey.ac.nz/",
+        "icon": "FaUniversity"
+      }
+    ]
+  },
+  {
+    "country": "UK",
+    "institutions": [
+      {
+        "title": "Solent University",
+        "image": "/images/CollegeImg/uk/f.png",
+        "link": "https://www.solent.ac.uk/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "UWE Bristol",
+        "image": "/images/CollegeImg/uk/s.png",
+        "link": "https://www.uwe.ac.uk/",
+        "icon": "FaGraduationCap"
+      },
+      {
+        "title": "University of Salford",
+        "image": "/images/CollegeImg/uk/th.png",
+        "link": "https://www.salford.ac.uk/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "Study Group",
+        "image": "/images/CollegeImg/uk/fourth.png",
+        "link": "https://www.studygroup.com/",
+        "icon": "FaSchool"
+      },
+        {
+      "title": "Accelerate Learning",
+      "image": "/images/CollegeImg/uk/fifth.png",
+      "link": "https://acceleratelearning.com/",
+      "icon": "FaUniversity"
+    },
+      {
+        "title": "University of Chichester",
+        "image": "/images/CollegeImg/uk/six.png",
+        "link": "https://www.chi.ac.uk/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "University of East London",
+        "image": "/images/CollegeImg/uk/seven.png",
+        "link": "https://www.uel.ac.uk/",
+        "icon": "FaUniversity"
+      },
+      {
+        "title": "Coventry University",
+        "image": "/images/CollegeImg/uk/eight.png",
+        "link": "https://www.coventry.ac.uk/",
+        "icon": "FaUniversity"
+      }
+    ]
+  }
+]
